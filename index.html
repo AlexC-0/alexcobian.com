@@ -3,103 +3,140 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Cobian | Portfolio Profesional</title>
-  <meta name="description" content="Portfolio profesional de Alex Cobian: desarrollo web, proyectos y presencia online." />
+  <title>Alex Cobian | Desarrollador Web</title>
+  <meta name="description" content="Portfolio profesional de Alex Cobian: competencias tecnicas DAW, proyectos y presencia profesional." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="bg-orb orb-1" aria-hidden="true"></div>
-  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="mesh" aria-hidden="true"></div>
 
-  <header class="topbar glass">
-    <div class="container topbar-inner">
-      <div>
-        <p class="eyebrow">Portfolio personal profesional</p>
-        <h1 class="brand">Alex Cobian</h1>
-      </div>
-      <nav class="socials" aria-label="Redes">
-        <a href="https://github.com/alexcobian" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/alexcobian" target="_blank" rel="noreferrer">LinkedIn</a>
+  <header class="topbar">
+    <div class="container topbar-inner glass">
+      <a class="brand" href="#inicio">Alex Cobian</a>
+      <nav class="nav" aria-label="Navegacion principal">
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#competencias">Competencias</a>
+        <a href="#stack">Stack</a>
+        <a href="#proyectos">Proyectos</a>
       </nav>
+      <div class="top-links">
+        <a href="http://github.com/AlexC-0" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </div>
   </header>
 
-  <main class="container">
+  <main id="inicio" class="container main">
     <section class="hero glass reveal">
-      <div>
-        <p class="eyebrow">Web personal</p>
-        <h2>Construyo productos web con foco en negocio, calidad y experiencia de usuario.</h2>
-        <p>
-          Esta pagina presenta mi trabajo, mi perfil profesional y los proyectos con los que estoy creando valor.
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio personal profesional</p>
+        <h1>Desarrollador Web en formacion DAW con foco tecnico en desarrollo full stack.</h1>
+        <p class="lead">
+          Estoy desarrollando mi perfil profesional en torno a la creacion de aplicaciones web robustas,
+          mantenibles y orientadas a resultados. Este portfolio resume mis competencias tecnicas,
+          herramientas y proyectos en evolucion.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/alexcobian" target="_blank" rel="noreferrer">Ver GitHub</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/alexcobian" target="_blank" rel="noreferrer">Ver LinkedIn</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="http://github.com/AlexC-0" target="_blank" rel="noreferrer">Ver GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/acb000" target="_blank" rel="noreferrer">Ver LinkedIn</a>
+          <a class="btn btn-ghost" href="https://pkxpertise.com" target="_blank" rel="noreferrer">Ver PKXpertise</a>
         </div>
       </div>
-      <aside class="hero-panel glass-soft">
-        <p class="panel-title">Enfoque</p>
-        <ul>
-          <li>Desarrollo web full stack</li>
-          <li>Arquitectura limpia y mantenible</li>
-          <li>Entrega orientada a resultados</li>
-        </ul>
+      <aside class="profile-card glass-soft">
+        <figure class="profile-photo">
+          <img src="assets/alex-profile.jpg" alt="Foto profesional de Alex Cobian" />
+          <span>Coloca tu foto en assets/alex-profile.jpg</span>
+        </figure>
+        <div class="profile-meta">
+          <h2>Alex Cobian</h2>
+          <p>Grado Superior DAW (2024 - Presente)</p>
+        </div>
       </aside>
     </section>
 
-    <section class="about glass reveal">
-      <h3>Sobre mi</h3>
+    <section id="sobre-mi" class="panel glass reveal">
+      <h2>Sobre mi</h2>
       <p>
-        Soy Alex Cobian. Me centro en crear soluciones digitales utiles, robustas y escalables.
-        Combino desarrollo, producto y ejecucion para convertir ideas en proyectos reales.
+        Actualmente estoy cursando el Grado Superior en Desarrollo de Aplicaciones Web.
+        Mi objetivo es consolidarme como desarrollador web full stack, aportando calidad de codigo,
+        buena arquitectura y enfoque de producto en cada proyecto.
       </p>
     </section>
 
-    <section class="projects reveal">
-      <div class="section-head">
-        <h3>Portfolio</h3>
-        <p>Enlaces clave de mi presentacion profesional</p>
+    <section id="competencias" class="panel glass reveal">
+      <h2>Competencias tecnicas (DAW)</h2>
+      <div class="competency-grid">
+        <article>
+          <h3>Desarrollo Frontend</h3>
+          <p>Construccion de interfaces web con HTML, CSS y JavaScript, incluyendo React para componentes y flujo moderno.</p>
+        </article>
+        <article>
+          <h3>Desarrollo Backend</h3>
+          <p>Programacion de logica de servidor con PHP y Node.js, estructura de APIs y organizacion de codigo mantenible.</p>
+        </article>
+        <article>
+          <h3>Bases de datos</h3>
+          <p>Modelado, consultas y gestion de datos con MySQL, SQL Server y Access.</p>
+        </article>
+        <article>
+          <h3>Entornos y despliegue</h3>
+          <p>Configuracion de entornos con XAMPP, Apache y Nginx para desarrollo y pruebas de aplicaciones web.</p>
+        </article>
       </div>
+    </section>
 
+    <section id="stack" class="panel glass reveal">
+      <h2>Stack y herramientas</h2>
+      <div class="chips">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+        <span>PHP</span><span>Node.js</span><span>Java</span><span>MySQL</span>
+        <span>SQL Server</span><span>Access</span><span>Git</span><span>Visual Studio Code</span>
+        <span>XAMPP</span><span>Apache</span><span>Nginx</span>
+      </div>
+    </section>
+
+    <section id="proyectos" class="panel reveal section-gap-large">
+      <div class="section-head">
+        <h2>Proyectos y presencia profesional</h2>
+        <p>Canales donde comparto codigo, progreso y trabajo en desarrollo.</p>
+      </div>
       <div class="cards">
         <article class="card glass">
-          <div class="card-top">
-            <span class="badge">Principal</span>
-            <a class="open" href="https://github.com/alexcobian" target="_blank" rel="noreferrer">Abrir</a>
-          </div>
-          <h4>GitHub</h4>
-          <p>Repositorios, codigo y proyectos en desarrollo.</p>
-          <a class="card-link" href="https://github.com/alexcobian" target="_blank" rel="noreferrer">github.com/alexcobian</a>
+          <span class="tag">Codigo</span>
+          <h3>GitHub</h3>
+          <p>Repositorios y evolucion de mis proyectos tecnicos.</p>
+          <a href="http://github.com/AlexC-0" target="_blank" rel="noreferrer">github.com/AlexC-0</a>
         </article>
 
         <article class="card glass">
-          <div class="card-top">
-            <span class="badge">Perfil</span>
-            <a class="open" href="https://www.linkedin.com/in/alexcobian" target="_blank" rel="noreferrer">Abrir</a>
-          </div>
-          <h4>LinkedIn</h4>
-          <p>Trayectoria profesional, experiencia y networking.</p>
-          <a class="card-link" href="https://www.linkedin.com/in/alexcobian" target="_blank" rel="noreferrer">linkedin.com/in/alexcobian</a>
+          <span class="tag">Perfil</span>
+          <h3>LinkedIn</h3>
+          <p>Resumen profesional y red de contactos.</p>
+          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noreferrer">linkedin.com/in/acb000</a>
         </article>
 
         <article class="card glass">
-          <div class="card-top">
-            <span class="badge">Proyecto</span>
-            <a class="open" href="https://pkxpertise.com" target="_blank" rel="noreferrer">Abrir</a>
-          </div>
-          <h4>PKXpertise</h4>
-          <p>Web en construccion como muestra de mi trabajo y enfoque de producto.</p>
-          <a class="card-link" href="https://pkxpertise.com" target="_blank" rel="noreferrer">pkxpertise.com</a>
+          <span class="tag">Proyecto</span>
+          <h3>PKXpertise</h3>
+          <p>Proyecto web como muestra de producto y ejecucion tecnica.</p>
+          <a href="https://pkxpertise.com" target="_blank" rel="noreferrer">pkxpertise.com</a>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="container footer">
-    <p>© 2026 Alex Cobian. Portfolio profesional.</p>
+    <p>© 2026 Alex Cobian | Portfolio profesional</p>
   </footer>
+
+  <button class="scroll-top" type="button" aria-label="Volver arriba" title="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 6l-7 7h4v5h6v-5h4z"></path>
+    </svg>
+  </button>
 </body>
 </html>
