@@ -4,13 +4,14 @@
     const photo = photoFigure ? photoFigure.querySelector('img') : null;
     if (!photoFigure || !photo) return;
 
+    const version = '20260305-1';
     const candidates = [
-      'assets/alex-profile.jpg',
-      'assets/alex-profile.jpeg',
-      'assets/alex-profile.png',
-      'assets/alex-profile.webp',
-      'assets/alex-profile.jfif',
-      'assets/alex-profile.jpg.jfif'
+      `assets/alex-profile.jpg?v=${version}`,
+      `assets/alex-profile.jpeg?v=${version}`,
+      `assets/alex-profile.png?v=${version}`,
+      `assets/alex-profile.webp?v=${version}`,
+      `assets/alex-profile.jfif?v=${version}`,
+      `assets/alex-profile.jpg.jfif?v=${version}`
     ];
 
     let index = 0;
