@@ -4,7 +4,7 @@
     const photo = photoFigure ? photoFigure.querySelector('img') : null;
     if (!photoFigure || !photo) return;
 
-    const version = '20260305-1';
+    const version = String(Date.now());
     const candidates = [
       `assets/alex-profile.jpg?v=${version}`,
       `assets/alex-profile.jpeg?v=${version}`,
