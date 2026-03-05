@@ -6,11 +6,11 @@
 
     const candidates = [
       'assets/alex-profile.jpg',
-      'assets/alex-profile.jpg.jfif',
-      'assets/alex-profile.jfif',
       'assets/alex-profile.jpeg',
       'assets/alex-profile.png',
-      'assets/alex-profile.webp'
+      'assets/alex-profile.webp',
+      'assets/alex-profile.jfif',
+      'assets/alex-profile.jpg.jfif'
     ];
 
     let index = 0;
