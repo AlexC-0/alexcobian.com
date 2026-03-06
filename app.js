@@ -4,34 +4,18 @@
     const photo = photoFigure ? photoFigure.querySelector('img') : null;
     if (!photoFigure || !photo) return;
 
-    const version = '20260306-2';
-    const candidates = [
-      `assets/alex-profile.jpg?v=${version}`,
-      `assets/alex-profile.jpeg?v=${version}`,
-      `assets/alex-profile.png?v=${version}`,
-      `assets/alex-profile.webp?v=${version}`,
-      `assets/alex-profile.jfif?v=${version}`,
-      `assets/alex-profile.jpg.jfif?v=${version}`
-    ];
-
-    let index = 0;
-
-    function tryNext() {
-      if (index >= candidates.length) {
-        photo.remove();
-        photoFigure.classList.add('missing');
-        return;
-      }
-      photo.src = candidates[index++];
-    }
+    const src = 'assets/alex-profile-20260306.jpg?v=20260306-3';
 
     photo.addEventListener('load', function () {
       photoFigure.classList.remove('missing');
     });
 
-    photo.addEventListener('error', tryNext);
+    photo.addEventListener('error', function () {
+      photo.remove();
+      photoFigure.classList.add('missing');
+    });
 
-    tryNext();
+    photo.src = src;
   }
 
   function setupScrollTop() {
