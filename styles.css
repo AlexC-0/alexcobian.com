@@ -97,6 +97,9 @@ body {
   background: rgba(255, 249, 240, 0.12);
   border-radius: 999px;
   padding: 8px 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: transform 160ms ease, background 160ms ease;
 }
 
@@ -165,6 +168,9 @@ h3 {
   border-radius: 12px;
   padding: 11px 16px;
   border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
 }
 
 .btn-primary {
@@ -220,17 +226,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-.profile-meta h2 {
-  font-size: 1.15rem;
-  margin-bottom: 5px;
-}
-
-.profile-meta p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.94rem;
-}
-
 .panel {
   margin-top: 34px;
   padding: 28px;
@@ -245,16 +240,6 @@ h3 {
   margin: 0;
   color: var(--muted);
   line-height: 1.72;
-}
-
-.about-link {
-  margin-top: 14px;
-}
-
-.about-link a {
-  color: #f1c489;
-  text-decoration: none;
-  font-weight: 700;
 }
 
 .competency-grid {
@@ -309,7 +294,7 @@ h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 13px;
 }
 
@@ -341,6 +326,28 @@ h3 {
   color: #f1c489;
   text-decoration: none;
   font-weight: 700;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 9px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.top-links a svg,
+.btn svg,
+.card a svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card a span {
+  min-width: 0;
 }
 
 .footer {
