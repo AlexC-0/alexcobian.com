@@ -1,10 +1,23 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alex Cobian | Desarrollador Web</title>
   <meta name="description" content="Portfolio profesional de Alex Cobian: competencias tecnicas DAW, proyectos y presencia profesional." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alexcobian.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="Alex Cobian | Desarrollador Web" />
+  <meta property="og:description" content="Portfolio profesional de Alex Cobian: competencias tecnicas DAW, proyectos y presencia profesional." />
+  <meta property="og:url" content="https://alexcobian.com/" />
+  <meta property="og:image" content="https://alexcobian.com/assets/alex-profile-20260306.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alex Cobian | Desarrollador Web" />
+  <meta name="twitter:description" content="Portfolio profesional de Alex Cobian: competencias tecnicas DAW, proyectos y presencia profesional." />
+  <meta name="twitter:image" content="https://alexcobian.com/assets/alex-profile-20260306.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2362452d'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='28' font-family='Arial' fill='%23fff8ef'%3EAC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -13,17 +26,27 @@
 </head>
 <body>
   <div class="mesh" aria-hidden="true"></div>
+  <div class="page-language">
+    <label class="lang-switch glass-soft" for="language-select">
+      <span data-i18n="languageLabel">Idioma:</span>
+      <select id="language-select" aria-label="Seleccionar idioma" data-i18n-aria-label="languageSelectAria">
+        <option value="es" data-i18n="languageOptionEs">Espanol</option>
+        <option value="en" data-i18n="languageOptionEn">Ingles</option>
+      </select>
+    </label>
+  </div>
 
   <header class="topbar">
     <div class="container topbar-inner glass">
       <a class="brand" href="#inicio">Alex Cobian</a>
       <nav class="nav" aria-label="Navegacion principal">
-        <a href="#competencias">Competencias</a>
-        <a href="#stack">Stack</a>
-        <a href="#proyectos">Proyectos</a>
-        </nav>
+        <a href="#competencias" data-i18n="navCompetencies">Competencias</a>
+        <a href="#stack" data-i18n="navStack">Stack</a>
+        <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+      </nav>
+      <div class="top-actions">
         <div class="top-links">
-          <a href="http://github.com/AlexC-0" target="_blank" rel="noreferrer">
+          <a href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
               <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
@@ -31,7 +54,7 @@
             </svg>
             <span>GitHub</span>
           </a>
-          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="4" y="4" width="16" height="16" rx="3"></rect>
               <path d="M8 10v6"></path>
@@ -40,7 +63,7 @@
             </svg>
             <span>LinkedIn</span>
           </a>
-          <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5s" target="_blank" rel="noreferrer">
+          <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5s" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
               <path d="M10 15.5 12 8l2 7.5"></path>
@@ -49,78 +72,76 @@
           </a>
         </div>
       </div>
+    </div>
   </header>
 
   <main id="inicio" class="container main">
-    <section class="hero glass reveal">
+    <section class="hero glass reveal" data-section-anchor>
       <div class="hero-copy">
-        <p class="eyebrow">Portfolio personal profesional</p>
-        <h1>Desarrollador Web en formacion DAW con foco tecnico en desarrollo full stack.</h1>
-        <p class="lead">
-          Sobre mi:
-        </p>
-        <p class="lead">
-          Desarrollador web con especializado en HTML, CSS, Java, JavaScript y SQL para Aplicaciones Web y ecosistema Salesforce, mediante sus soluciones cloud. Actualmente, estoy especializándome en el uso de APEX a través de Trailhead, donde soy un miembro activo de la comunidad. Esta plataforma me ha permitido explorar de manera práctica las posibilidades del entorno Salesforce.
+        <p class="eyebrow" data-i18n="eyebrow">Portfolio profesional</p>
+        <h1 data-i18n="heroTitle">Desarrollador Web con foco tecnico en desarrollo full stack</h1>
+        <p class="lead" data-i18n="heroBody">
+          Desarrollador web con conocimientos en HTML, CSS, Java, JavaScript y SQL para aplicaciones web, junto con interes practico en el ecosistema Salesforce y sus soluciones cloud. Actualmente sigo profundizando en Apex a traves de Trailhead, donde participo de forma activa en la comunidad. Esa experiencia me ha permitido explorar de manera practica las posibilidades del entorno Salesforce.
         </p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="http://github.com/AlexC-0" target="_blank" rel="noreferrer">
+          <a class="btn btn-primary" href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
               <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
               <path d="M9 22v-3.5c-3.5.8-6-1.1-6-4.7 0-1.5.5-2.7 1.5-3.7-.2-.7-.5-2 .2-3.6 0 0 1.2-.4 3.8 1.5A13 13 0 0 1 12 7c1.2 0 2.4.2 3.5.6 2.6-1.9 3.8-1.5 3.8-1.5.7 1.6.4 2.9.2 3.6 1 1 1.5 2.2 1.5 3.7 0 3.6-2.5 5.5-6 4.7V22"></path>
             </svg>
-            <span>Ver GitHub</span>
+            <span data-i18n="ctaGithub">Ver GitHub</span>
           </a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/acb000" target="_blank" rel="noreferrer">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/acb000" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="4" y="4" width="16" height="16" rx="3"></rect>
               <path d="M8 10v6"></path>
               <path d="M8 8h.01"></path>
               <path d="M12 16v-3.3a2.2 2.2 0 0 1 4.4 0V16"></path>
             </svg>
-            <span>Ver LinkedIn</span>
+            <span data-i18n="ctaLinkedin">Ver LinkedIn</span>
           </a>
-          <a class="btn btn-ghost" href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5s" target="_blank" rel="noreferrer">
+          <a class="btn btn-primary" href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5s" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
               <path d="M10 15.5 12 8l2 7.5"></path>
             </svg>
-            <span>Ver Salesforce Trailhead</span>
+            <span data-i18n="ctaTrailhead">Ver Salesforce Trailhead</span>
           </a>
         </div>
       </div>
       <aside class="profile-card glass-soft">
         <figure class="profile-photo">
-          <img src="assets/alex-profile-20260306.jpg" alt="Foto profesional de Alex Cobian" />
-          <span>Coloca tu foto en assets/alex-profile-20260306.jpg</span>
+          <img src="assets/alex-profile-20260306.jpg?v=20260306-3" alt="Foto profesional de Alex Cobian" />
+          <span data-i18n="photoFallback">Coloca tu foto en assets/alex-profile-20260306.jpg</span>
         </figure>
       </aside>
     </section>
 
-    <section id="competencias" class="panel glass reveal">
-      <h2>Competencias tecnicas (DAW)</h2>
+    <section id="competencias" class="panel glass reveal section-anchor">
+      <h2 data-i18n="competenciesTitle">Competencias tecnicas (DAW)</h2>
       <div class="competency-grid">
         <article>
-          <h3>Desarrollo Frontend</h3>
-          <p>Construccion de interfaces web con HTML, CSS y JavaScript, incluyendo React para componentes y flujo moderno.</p>
+          <h3 data-i18n="competencyFrontendTitle">Desarrollo Frontend</h3>
+          <p data-i18n="competencyFrontendBody">Construccion de interfaces web con HTML, CSS y JavaScript, incluyendo React para componentes y flujo moderno.</p>
         </article>
         <article>
-          <h3>Desarrollo Backend</h3>
-          <p>Programacion de logica de servidor con PHP y Node.js, estructura de APIs y organizacion de codigo mantenible.</p>
+          <h3 data-i18n="competencyBackendTitle">Desarrollo Backend</h3>
+          <p data-i18n="competencyBackendBody">Programacion de logica de servidor con PHP y Node.js, estructura de APIs y organizacion de codigo mantenible.</p>
         </article>
         <article>
-          <h3>Bases de datos</h3>
-          <p>Modelado, consultas y gestion de datos con MySQL, SQL Server y Access.</p>
+          <h3 data-i18n="competencyDataTitle">Bases de datos</h3>
+          <p data-i18n="competencyDataBody">Modelado, consultas y gestion de datos con MySQL, SQL Server y Access.</p>
         </article>
         <article>
-          <h3>Entornos y despliegue</h3>
-          <p>Configuracion de entornos con XAMPP, Apache y Nginx para desarrollo y pruebas de aplicaciones web.</p>
+          <h3 data-i18n="competencyDeployTitle">Entornos y despliegue</h3>
+          <p data-i18n="competencyDeployBody">Configuracion de entornos con XAMPP, Apache y Nginx para desarrollo y pruebas de aplicaciones web.</p>
         </article>
       </div>
     </section>
 
-    <section id="stack" class="panel glass reveal">
-      <h2>Stack y herramientas</h2>
+    <section id="stack" class="panel glass reveal section-anchor">
+      <h2 data-i18n="stackTitle">Stack y herramientas</h2>
       <div class="chips">
         <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
         <span>PHP</span><span>Node.js</span><span>Java</span><span>MySQL</span>
@@ -129,17 +150,17 @@
       </div>
     </section>
 
-    <section id="proyectos" class="panel reveal section-gap-large">
+    <section id="proyectos" class="panel glass reveal section-gap-large section-anchor">
       <div class="section-head">
-        <h2>Proyectos y presencia profesional</h2>
-        <p>Canales donde comparto codigo, progreso y trabajo en desarrollo.</p>
+        <h2 data-i18n="projectsTitle">Proyectos y presencia profesional</h2>
+        <p data-i18n="projectsBody">Canales donde comparto codigo, progreso y trabajo en desarrollo.</p>
       </div>
       <div class="cards">
-        <article class="card glass">
-          <span class="tag">Codigo</span>
+        <article class="card glass-soft">
+          <span class="tag" data-i18n="tagCode">Codigo</span>
           <h3>GitHub</h3>
-          <p>Repositorios y evolucion de mis proyectos tecnicos.</p>
-          <a href="http://github.com/AlexC-0" target="_blank" rel="noreferrer">
+          <p data-i18n="projectGithubBody">Repositorios y evolucion de mis proyectos tecnicos.</p>
+          <a href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
               <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
@@ -149,11 +170,11 @@
           </a>
         </article>
 
-        <article class="card glass">
-          <span class="tag">Perfil</span>
+        <article class="card glass-soft">
+          <span class="tag" data-i18n="tagProfile">Perfil</span>
           <h3>LinkedIn</h3>
-          <p>Resumen profesional y red de contactos.</p>
-          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noreferrer">
+          <p data-i18n="projectLinkedinBody">Resumen profesional y red de contactos.</p>
+          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="4" y="4" width="16" height="16" rx="3"></rect>
               <path d="M8 10v6"></path>
@@ -164,11 +185,11 @@
           </a>
         </article>
 
-        <article class="card glass">
-          <span class="tag">Proyecto</span>
+        <article class="card glass-soft">
+          <span class="tag" data-i18n="tagProject">Proyecto</span>
           <h3>PKXpertise</h3>
-          <p>Proyecto web como muestra de producto y ejecucion tecnica.</p>
-          <a href="https://pkxpertise.com" target="_blank" rel="noreferrer">
+          <p data-i18n="projectPkxBody">Proyecto web como muestra de producto y ejecucion tecnica.</p>
+          <a href="https://pkxpertise.com" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 7.5h14"></path>
               <path d="M7 5h10l2 2.5v9L17 19H7l-2-2.5v-9z"></path>
@@ -178,11 +199,11 @@
           </a>
         </article>
 
-        <article class="card glass">
+        <article class="card glass-soft">
           <span class="tag">Salesforce</span>
           <h3>Salesforce Trailhead</h3>
-          <p>Perfil activo en Salesforce Trailhead, centrado en aprendizaje practico del ecosistema y APEX.</p>
-          <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5s" target="_blank" rel="noreferrer">
+          <p data-i18n="projectTrailheadBody">Perfil activo en Salesforce Trailhead, centrado en aprendizaje practico del ecosistema y APEX.</p>
+          <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5s" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
               <path d="M10 15.5 12 8l2 7.5"></path>
@@ -195,10 +216,10 @@
   </main>
 
   <footer class="container footer">
-    <p>© 2026 Alex Cobian | Portfolio profesional</p>
+    <p data-i18n="footerText">(c) 2026 Alex Cobian | Portfolio profesional</p>
   </footer>
 
-  <button class="scroll-top" type="button" aria-label="Volver arriba" title="Volver arriba">
+  <button class="scroll-top" type="button" aria-label="Volver arriba" title="Volver arriba" data-i18n-aria-label="scrollTopLabel" data-i18n-title="scrollTopLabel">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M12 6l-7 7h4v5h6v-5h4z"></path>
     </svg>
