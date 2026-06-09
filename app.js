@@ -1,83 +1,85 @@
 (function () {
   const translations = {
     es: {
-      pageTitle: "Alex Cobian | Desarrollador Web",
-      pageDescription: "Portfolio profesional de Alex Cobian: competencias tecnicas DAW, proyectos y presencia profesional.",
-      ogTitle: "Alex Cobian | Desarrollador Web",
-      ogDescription: "Portfolio profesional de Alex Cobian: competencias tecnicas DAW, proyectos y presencia profesional.",
+      pageTitle: "Alex Cobian | Desarrollador software",
+      pageDescription: "Portfolio profesional de Alex Cobian: desarrollo de software, experiencia actual en Shackleton Innovation, competencias DAW y Salesforce.",
+      ogTitle: "Alex Cobian | Desarrollador software",
+      ogDescription: "Portfolio profesional de Alex Cobian: desarrollo de software, experiencia actual en Shackleton Innovation, competencias DAW y Salesforce.",
       navCompetencies: "Competencias",
       navStack: "Stack",
-      navProjects: "Proyectos",
+      navProjects: "Presencia",
       languageLabel: "Idioma:",
       languageSelectAria: "Seleccionar idioma",
       languageOptionEs: "Espanol",
       languageOptionEn: "Ingles",
       eyebrow: "Portfolio profesional",
-      heroTitle: "Desarrollador Web con foco tecnico en desarrollo full stack",
-      heroBody: "Desarrollador web con conocimientos en HTML, CSS, Java, JavaScript y SQL para aplicaciones web, junto con interes practico en el ecosistema Salesforce y sus soluciones cloud. Actualmente sigo profundizando en Apex a traves de Trailhead, donde participo de forma activa en la comunidad. Esa experiencia me ha permitido explorar de manera practica las posibilidades del entorno Salesforce.",
+      heroTitle: "Desarrollador software con foco tecnico en soluciones full stack",
+      heroBody: "Desarrollador software con conocimientos en HTML, CSS, Java, JavaScript, PHP, Node.js y SQL para aplicaciones web. Actualmente trabajo en Shackleton Innovation, donde aplico desarrollo de software en tareas reales de frontend, backend, APIs, datos e incidencias, traduciendo requisitos ambiguos en soluciones concretas y mantenibles. En paralelo sigo profundizando en el ecosistema Salesforce y en Apex a traves de Trailhead.",
       ctaGithub: "Ver GitHub",
       ctaLinkedin: "Ver LinkedIn",
       ctaTrailhead: "Ver Salesforce Trailhead",
       photoFallback: "Coloca tu foto en assets/alex-profile-20260306.jpg",
       competenciesTitle: "Competencias tecnicas (DAW)",
       competencyFrontendTitle: "Desarrollo Frontend",
-      competencyFrontendBody: "Construccion de interfaces web con HTML, CSS y JavaScript, incluyendo React para componentes y flujo moderno.",
-      competencyBackendTitle: "Desarrollo Backend",
-      competencyBackendBody: "Programacion de logica de servidor con PHP y Node.js, estructura de APIs y organizacion de codigo mantenible.",
+      competencyFrontendBody: "Construccion de interfaces web con HTML, CSS y JavaScript, incluyendo React, manipulacion del DOM, formularios, eventos, interacciones y peticiones asincronas.",
+      competencyBackendTitle: "Backend y APIs",
+      competencyBackendBody: "Programacion de logica de servidor con PHP y Node.js, estructura de APIs, analisis de incidencias, validacion de datos y manejo de errores.",
       competencyDataTitle: "Bases de datos",
-      competencyDataBody: "Modelado, consultas y gestion de datos con MySQL, SQL Server y Access.",
+      competencyDataBody: "Modelado, consultas y gestion de datos con MySQL, SQL Server y Access, prestando atencion a filtros, valores nulos, estados y datos reales.",
       competencyDeployTitle: "Entornos y despliegue",
-      competencyDeployBody: "Configuracion de entornos con XAMPP, Apache y Nginx para desarrollo y pruebas de aplicaciones web.",
+      competencyDeployBody: "Configuracion de entornos con XAMPP, Apache, Nginx y Docker, revisando rutas, variables, permisos y diferencias entre local y servidor.",
+      competencyQualityTitle: "Buenas practicas y criterio tecnico",
+      competencyQualityBody: "Organizacion de codigo, separacion de responsabilidades, lectura de tareas ambiguas y uso de herramientas de IA como apoyo para revisar y optimizar soluciones.",
       stackTitle: "Stack y herramientas",
-      projectsTitle: "Proyectos y presencia profesional",
-      projectsBody: "Canales donde comparto codigo, progreso y trabajo en desarrollo.",
+      projectsTitle: "Presencia profesional",
+      projectsBody: "Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.",
       tagCode: "Codigo",
       tagProfile: "Perfil",
-      tagProject: "Proyecto",
+      tagLearning: "Aprendizaje",
       projectGithubBody: "Repositorios y evolucion de mis proyectos tecnicos.",
       projectLinkedinBody: "Resumen profesional y red de contactos.",
-      projectPkxBody: "Proyecto web como muestra de producto y ejecucion tecnica.",
       projectTrailheadBody: "Perfil activo en Salesforce Trailhead, centrado en aprendizaje practico del ecosistema y APEX.",
       footerText: "(c) 2026 Alex Cobian | Portfolio profesional",
       scrollTopLabel: "Volver arriba"
     },
     en: {
-      pageTitle: "Alex Cobian | Web Developer",
-      pageDescription: "Professional portfolio of Alex Cobian: DAW technical skills, projects, and professional presence.",
-      ogTitle: "Alex Cobian | Web Developer",
-      ogDescription: "Professional portfolio of Alex Cobian: DAW technical skills, projects, and professional presence.",
+      pageTitle: "Alex Cobian | Software Developer",
+      pageDescription: "Professional portfolio of Alex Cobian: software development, current experience at Shackleton Innovation, DAW skills, and Salesforce.",
+      ogTitle: "Alex Cobian | Software Developer",
+      ogDescription: "Professional portfolio of Alex Cobian: software development, current experience at Shackleton Innovation, DAW skills, and Salesforce.",
       navCompetencies: "Skills",
       navStack: "Stack",
-      navProjects: "Projects",
+      navProjects: "Presence",
       languageLabel: "Language:",
       languageSelectAria: "Select language",
       languageOptionEs: "Spanish",
       languageOptionEn: "English",
       eyebrow: "Professional portfolio",
-      heroTitle: "Web Developer focused on full stack development",
-      heroBody: "Web developer with technical knowledge of HTML, CSS, Java, JavaScript, and SQL for web applications, along with a practical interest in the Salesforce ecosystem and its cloud solutions. I am currently deepening my Apex skills through Trailhead, where I actively take part in the community. That experience has allowed me to explore the possibilities of the Salesforce environment in a practical way.",
+      heroTitle: "Software Developer focused on full stack solutions",
+      heroBody: "Software developer with technical knowledge of HTML, CSS, Java, JavaScript, PHP, Node.js, and SQL for web applications. I currently work at Shackleton Innovation, applying software development to real frontend, backend, API, data, and issue-resolution tasks, turning ambiguous requirements into concrete and maintainable solutions. In parallel, I continue deepening my Salesforce ecosystem and Apex knowledge through Trailhead.",
       ctaGithub: "View GitHub",
       ctaLinkedin: "View LinkedIn",
       ctaTrailhead: "View Salesforce Trailhead",
       photoFallback: "Place your photo in assets/alex-profile-20260306.jpg",
       competenciesTitle: "Technical skills (DAW)",
       competencyFrontendTitle: "Frontend Development",
-      competencyFrontendBody: "Building web interfaces with HTML, CSS, and JavaScript, including React for component-based workflows and modern frontend development.",
-      competencyBackendTitle: "Backend Development",
-      competencyBackendBody: "Server-side programming with PHP and Node.js, API structure, and maintainable code organization.",
+      competencyFrontendBody: "Building web interfaces with HTML, CSS, and JavaScript, including React, DOM manipulation, forms, events, interactions, and asynchronous requests.",
+      competencyBackendTitle: "Backend and APIs",
+      competencyBackendBody: "Server-side programming with PHP and Node.js, API structure, issue analysis, data validation, and error handling.",
       competencyDataTitle: "Databases",
-      competencyDataBody: "Data modeling, querying, and management with MySQL, SQL Server, and Access.",
+      competencyDataBody: "Data modeling, querying, and management with MySQL, SQL Server, and Access, paying attention to filters, null values, states, and real-world data.",
       competencyDeployTitle: "Environments and deployment",
-      competencyDeployBody: "Environment setup with XAMPP, Apache, and Nginx for development and testing of web applications.",
+      competencyDeployBody: "Environment setup with XAMPP, Apache, Nginx, and Docker, reviewing paths, variables, permissions, and differences between local and server environments.",
+      competencyQualityTitle: "Best practices and technical judgment",
+      competencyQualityBody: "Code organization, separation of responsibilities, reading ambiguous tasks, and using AI tools as support for reviewing and optimizing solutions.",
       stackTitle: "Stack and tools",
-      projectsTitle: "Projects and professional presence",
-      projectsBody: "Places where I share code, progress, and the work I am building.",
+      projectsTitle: "Professional presence",
+      projectsBody: "Places where I present my profile, code, and Salesforce learning.",
       tagCode: "Code",
       tagProfile: "Profile",
-      tagProject: "Project",
+      tagLearning: "Learning",
       projectGithubBody: "Repositories and the evolution of my technical projects.",
       projectLinkedinBody: "Professional summary and network.",
-      projectPkxBody: "Web project presented as a showcase of product thinking and technical execution.",
       projectTrailheadBody: "Active Salesforce Trailhead profile focused on practical learning across the ecosystem and APEX.",
       footerText: "(c) 2026 Alex Cobian | Professional portfolio",
       scrollTopLabel: "Back to top"
@@ -121,8 +123,24 @@
     });
   }
 
+  function getStoredLanguage() {
+    try {
+      return localStorage.getItem("portfolio-language");
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function setStoredLanguage(language) {
+    try {
+      localStorage.setItem("portfolio-language", language);
+    } catch (error) {
+      // Storage can be unavailable in private or restricted browsing modes.
+    }
+  }
+
   function updateMeta(language) {
-    const dict = translations[language];
+    const dict = translations[language] || translations.es;
     document.title = dict.pageTitle;
 
     const description = document.querySelector('meta[name="description"]');
@@ -141,7 +159,8 @@
   }
 
   function applyLanguage(language) {
-    const dict = translations[language] || translations.es;
+    const activeLanguage = translations[language] ? language : "es";
+    const dict = translations[activeLanguage];
 
     document.querySelectorAll("[data-i18n]").forEach(function (node) {
       const key = node.dataset.i18n;
@@ -164,16 +183,16 @@
       }
     });
 
-    document.documentElement.lang = language;
-    updateMeta(language);
-    localStorage.setItem("portfolio-language", language);
+    document.documentElement.lang = activeLanguage;
+    updateMeta(activeLanguage);
+    setStoredLanguage(activeLanguage);
   }
 
   function setupLanguageSwitcher() {
     const select = document.querySelector("#language-select");
     if (!select) return;
 
-    const saved = localStorage.getItem("portfolio-language");
+    const saved = getStoredLanguage();
     const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("en") ? "en" : "es";
     const initialLanguage = saved && translations[saved] ? saved : browserLanguage;
 

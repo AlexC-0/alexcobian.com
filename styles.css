@@ -225,8 +225,9 @@ body.menu-offset-ready .section-anchor {
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 h1,
@@ -517,6 +518,24 @@ select:focus-visible {
 @keyframes rise {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    animation: none;
+  }
+
+  .nav a,
+  .top-links a,
+  .lang-switch,
+  .btn,
+  .scroll-top {
+    transition: none;
+  }
 }
 
 @media (max-width: 1180px) {
