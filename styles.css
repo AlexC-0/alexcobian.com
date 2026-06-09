@@ -67,10 +67,12 @@ body.menu-offset-ready .section-anchor {
 }
 
 .page-language {
-  position: absolute;
-  top: 18px;
-  right: 42px;
-  z-index: 30;
+  position: relative;
+  z-index: 10;
+  width: min(1160px, 92vw);
+  margin: 14px auto 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .topbar {
@@ -536,12 +538,6 @@ select:focus-visible {
 
   .topbar {
     position: static;
-  }
-
-  .page-language {
-    position: static;
-    width: min(1160px, 92vw);
-    margin: 18px auto 0;
   }
 
   .topbar-inner,
