@@ -5,32 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; form-action 'self'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Alex Cobian | Desarrollador software</title>
-  <meta name="description" content="Portfolio profesional de Alex Cobian: desarrollo de software, soluciones web, competencias DAW y aprendizaje en Salesforce." />
+  <title>Alex Cobián Benito | Desarrollador de Aplicaciones Web y Software</title>
+  <meta name="description" content="Portfolio profesional de Alex Cobián Benito: desarrollo de aplicaciones web, soluciones full stack, competencias DAW, automatización con IA y aprendizaje en Salesforce." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://alexcobian.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:title" content="Alex Cobian | Desarrollador software" />
-  <meta property="og:description" content="Portfolio profesional de Alex Cobian: desarrollo de software, soluciones web, competencias DAW y aprendizaje en Salesforce." />
+  <meta property="og:title" content="Alex Cobián Benito | Desarrollador de Aplicaciones Web y Software" />
+  <meta property="og:description" content="Portfolio profesional de Alex Cobián Benito: desarrollo de aplicaciones web, soluciones full stack, competencias DAW, automatización con IA y aprendizaje en Salesforce." />
   <meta property="og:url" content="https://alexcobian.com/" />
-  <meta property="og:image" content="https://alexcobian.com/assets/alex-profile-20260306.jpg?v=20260328-1" />
+  <meta property="og:image" content="https://alexcobian.com/assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Alex Cobian | Desarrollador software" />
-  <meta name="twitter:description" content="Portfolio profesional de Alex Cobian: desarrollo de software, soluciones web, competencias DAW y aprendizaje en Salesforce." />
-  <meta name="twitter:image" content="https://alexcobian.com/assets/alex-profile-20260306.jpg?v=20260328-1" />
+  <meta name="twitter:title" content="Alex Cobián Benito | Desarrollador de Aplicaciones Web y Software" />
+  <meta name="twitter:description" content="Portfolio profesional de Alex Cobián Benito: desarrollo de aplicaciones web, soluciones full stack, competencias DAW, automatización con IA y aprendizaje en Salesforce." />
+  <meta name="twitter:image" content="https://alexcobian.com/assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2362452d'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='28' font-family='Arial' fill='%23fff8ef'%3EAC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260610-1" />
-  <script src="app.js?v=20260610-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260904-5" />
+  <script src="app.js?v=20260904-5" defer></script>
 </head>
 <body>
   <div class="mesh" aria-hidden="true"></div>
   <header class="topbar">
     <div class="container topbar-inner glass">
-      <a class="brand" href="#inicio">Alex Cobian</a>
+      <a class="brand" href="#inicio">Alex Cobián Benito</a>
       <nav class="nav" aria-label="Navegacion principal">
         <a href="#competencias" data-i18n="navCompetencies">Competencias</a>
         <a href="#stack" data-i18n="navStack">Stack</a>
@@ -63,27 +63,30 @@
             <span>Salesforce Trailhead</span>
           </a>
         </div>
+        <div class="lang-switch glass-soft" data-language-switch>
+          <span class="lang-label" data-i18n="languageLabel">Idioma:</span>
+          <button class="lang-trigger" type="button" id="language-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-options" data-i18n-aria-label="languageSelectAria">
+            <span data-language-current>Espanol</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="lang-options" id="language-options" role="listbox" aria-labelledby="language-trigger" hidden>
+            <button class="lang-option" type="button" role="option" aria-selected="true" data-language-option="es" data-i18n="languageOptionEs">Espanol</button>
+            <button class="lang-option" type="button" role="option" aria-selected="false" data-language-option="en" data-i18n="languageOptionEn">Ingles</button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-
-  <div class="page-language">
-    <label class="lang-switch glass-soft" for="language-select">
-      <span data-i18n="languageLabel">Idioma:</span>
-      <select id="language-select" aria-label="Seleccionar idioma" data-i18n-aria-label="languageSelectAria">
-        <option value="es" data-i18n="languageOptionEs">Espanol</option>
-        <option value="en" data-i18n="languageOptionEn">Ingles</option>
-      </select>
-    </label>
-  </div>
 
   <main id="inicio" class="container main">
     <section class="hero glass reveal" data-section-anchor>
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="eyebrow">Portfolio profesional</p>
-        <h1 data-i18n="heroTitle">Desarrollador software con foco tecnico en soluciones full stack</h1>
+        <h1 data-i18n="heroTitle">Desarrollador de Aplicaciones Web y Software</h1>
         <p class="lead" data-i18n="heroBody">
-          Desarrollador software con conocimientos en HTML, CSS, Java, JavaScript, PHP, Node.js y SQL para aplicaciones web. Actualmente, aplico en mi puesto de trabajo el desarrollo de software en tareas de frontend, backend, APIs, datos e incidencias. Convirtiendo problemas propios de mi puesto en soluciones concretas y adaptadas. En paralelo sigo profundizando en el ecosistema Salesforce y en Apex a traves de Trailhead.
+          Soy desarrollador de aplicaciones web y software, formado en DAW y acostumbrado a trabajar con problemas reales: interfaces que tienen que responder bien, APIs que deben ser claras, datos que no siempre llegan perfectos e incidencias que obligan a seguir el flujo completo antes de tocar codigo. Me interesa construir soluciones utiles, mantenibles y con criterio, apoyandome en tecnologias web, bases de datos, Git y herramientas de IA. Ademas, sigo ampliando mi perfil en Salesforce y Apex a traves de Trailhead.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
@@ -110,22 +113,31 @@
             </svg>
             <span data-i18n="ctaTrailhead">Ver Salesforce Trailhead</span>
           </a>
+          <a class="btn btn-primary" href="assets/alex-cobian-benito-cv-2026.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path>
+              <path d="M14 2v5h5"></path>
+              <path d="M12 11v6"></path>
+              <path d="m9 14 3 3 3-3"></path>
+            </svg>
+            <span data-i18n="ctaCv">Descargar CV</span>
+          </a>
         </div>
       </div>
       <aside class="profile-card glass-soft">
         <figure class="profile-photo">
-          <img src="assets/alex-profile-20260306.jpg?v=20260328-1" alt="Foto profesional de Alex Cobian" decoding="async" fetchpriority="high" />
-          <span data-i18n="photoFallback">Coloca tu foto en assets/alex-profile-20260306.jpg</span>
+          <img src="assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" alt="Foto profesional de Alex Cobián Benito" decoding="async" fetchpriority="high" />
+          <span data-i18n="photoFallback">Coloca tu foto en assets/alex-cobian-benito-profile-20260904.jpg</span>
         </figure>
       </aside>
     </section>
 
     <section id="competencias" class="panel glass reveal section-anchor">
-      <h2 data-i18n="competenciesTitle">Competencias tecnicas (DAW)</h2>
+      <h2 data-i18n="competenciesTitle">Competencias tecnicas</h2>
       <div class="competency-grid">
         <article>
           <h3 data-i18n="competencyFrontendTitle">Desarrollo Frontend</h3>
-          <p data-i18n="competencyFrontendBody">Construccion de interfaces web con HTML, CSS y JavaScript, incluyendo React, manipulacion del DOM, formularios, eventos, interacciones y peticiones asincronas.</p>
+          <p data-i18n="competencyFrontendBody">Construccion de interfaces web con HTML5, CSS, JavaScript, TypeScript y React, incluyendo manipulacion del DOM, formularios, eventos, interacciones y peticiones asincronas.</p>
         </article>
         <article>
           <h3 data-i18n="competencyBackendTitle">Backend y APIs</h3>
@@ -137,11 +149,15 @@
         </article>
         <article>
           <h3 data-i18n="competencyDeployTitle">Entornos y despliegue</h3>
-          <p data-i18n="competencyDeployBody">Configuracion de entornos con XAMPP, Apache, Nginx y Docker, revisando rutas, variables, permisos y diferencias entre local y servidor.</p>
+          <p data-i18n="competencyDeployBody">Configuracion de entornos con XAMPP, Apache, Nginx y Docker, control de versiones con Git y GitHub, y trabajo diario con Visual Studio Code.</p>
         </article>
         <article>
-          <h3 data-i18n="competencyQualityTitle">Buenas practicas y criterio tecnico</h3>
-          <p data-i18n="competencyQualityBody">Organizacion de codigo, separacion de responsabilidades, lectura de tareas ambiguas y uso de herramientas de IA como apoyo para revisar y optimizar soluciones.</p>
+          <h3 data-i18n="competencyMobileTitle">Software y multiplataforma</h3>
+          <p data-i18n="competencyMobileBody">Base en Java, Kotlin, Jetpack Compose y Visual Basic .NET para ampliar el criterio tecnico mas alla del desarrollo web y entender distintos entornos de aplicacion.</p>
+        </article>
+        <article>
+          <h3 data-i18n="competencyQualityTitle">Buenas practicas e IA aplicada</h3>
+          <p data-i18n="competencyQualityBody">Organizacion de codigo, separacion de responsabilidades, specs driven development, prompt engineering y manejo de agentes de IA como apoyo para revisar y optimizar soluciones.</p>
         </article>
       </div>
     </section>
@@ -149,11 +165,13 @@
     <section id="stack" class="panel glass reveal section-anchor">
       <h2 data-i18n="stackTitle">Stack y herramientas</h2>
       <div class="chips">
-        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
         <span>PHP</span><span>Node.js</span><span>Java</span><span>MySQL</span>
         <span>SQL Server</span><span>Access</span><span>APIs</span><span>Docker</span>
         <span>Git</span><span>Visual Studio Code</span><span>XAMPP</span><span>Apache</span>
-        <span>Nginx</span><span>Apex</span><span>Salesforce Trailhead</span><span>Claude/Codex</span>
+        <span>Nginx</span><span>Kotlin</span><span>Jetpack Compose</span><span>Visual Basic .NET</span>
+        <span>Apex</span><span>Salesforce Trailhead</span><span>Specs Driven Development</span>
+        <span>Prompt engineering</span><span>Manejo de agentes</span><span>Claude/Codex</span>
       </div>
     </section>
 
@@ -204,12 +222,27 @@
             <span>salesforce.com/trailblazer/sginc6pv5i7x46y5sc</span>
           </a>
         </article>
+
+        <article class="card glass-soft">
+          <span class="tag" data-i18n="tagCv">CV</span>
+          <h3 data-i18n="projectCvTitle">Curriculum profesional</h3>
+          <p data-i18n="projectCvBody">CV actualizado en PDF con mi perfil, formacion y competencias tecnicas principales.</p>
+          <a href="assets/alex-cobian-benito-cv-2026.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path>
+              <path d="M14 2v5h5"></path>
+              <path d="M12 11v6"></path>
+              <path d="m9 14 3 3 3-3"></path>
+            </svg>
+            <span data-i18n="projectCvLink">Descargar PDF</span>
+          </a>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="container footer">
-    <p data-i18n="footerText">(c) 2026 Alex Cobian | Portfolio profesional</p>
+    <p data-i18n="footerText">(c) 2026 Alex Cobián Benito | Portfolio profesional</p>
   </footer>
 
   <button class="scroll-top" type="button" aria-label="Volver arriba" title="Volver arriba" data-i18n-aria-label="scrollTopLabel" data-i18n-title="scrollTopLabel">
