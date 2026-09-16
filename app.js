@@ -7,7 +7,8 @@
       ogDescription: "Portfolio profesional de Alex Cobián Benito: desarrollo de aplicaciones web, soluciones full stack, competencias DAW, automatización con IA y aprendizaje en Salesforce.",
       navCompetencies: "Competencias",
       navStack: "Stack",
-      navProjects: "Presencia",
+      navPresence: "Presencia",
+      navProjects: "Proyectos",
       languageLabel: "Idioma:",
       languageSelectAria: "Seleccionar idioma",
       languageOptionEs: "Espanol",
@@ -34,8 +35,29 @@
       competencyQualityTitle: "Buenas practicas e IA aplicada",
       competencyQualityBody: "Organizacion de codigo, separacion de responsabilidades, specs driven development, prompt engineering y manejo de agentes de IA como apoyo para revisar y optimizar soluciones.",
       stackTitle: "Stack y herramientas",
-      projectsTitle: "Presencia profesional",
-      projectsBody: "Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.",
+      presenceTitle: "Presencia profesional",
+      presenceBody: "Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.",
+      projectsTitle: "Proyectos",
+      projectLiveTag: "Web publicada",
+      projectPkxpertiseBody: "Plataforma de servicios Pokémon con configuración guiada de unidades y equipos, seguimiento de pedidos y soporte al usuario. Un proyecto que reúne interfaz web y lógica de servidor en una experiencia publicada con dominio propio.",
+      projectPkxpertiseStack: "Tecnologías de PKXpertise",
+      projectPkxpertiseVisit: "Visitar la web de PKXpertise",
+      projectPkxpertiseCode: "Ver código de PKXpertise en GitHub",
+      projectUnpublishedTag: "Web no publicada",
+      projectClientIntuitiveTitle: "Cliente 1 · Web intuitiva",
+      projectClientIntuitiveBody: "Primera propuesta web para un cliente del sector de baterías industriales, con un recorrido guiado por aplicación, fase e interés, exploración de productos y formulario de consulta técnica.",
+      projectClientIntuitiveStack: "Tecnologías de la web intuitiva",
+      projectClientIntuitiveCode: "Ver código de la web intuitiva de Cliente 1 en GitHub",
+      projectClientDevelopedTitle: "Cliente 1 · Web base desarrollada",
+      projectClientDevelopedBody: "Segunda versión para el mismo cliente, con navegación orbital, catálogo técnico y secciones de aplicaciones, empresa, proceso y documentación, conectadas con un formulario de contacto técnico-comercial.",
+      projectClientDevelopedStack: "Tecnologías de la web base desarrollada",
+      projectClientDevelopedCode: "Ver código de la web base desarrollada de Cliente 1 en GitHub",
+      projectClientReimaginedTitle: "Cliente 1 · Web reimaginada",
+      projectClientReimaginedBody: "Reinterpretación multipágina de la web del cliente, con navegación orbital y páginas dedicadas a sistemas, aplicaciones, método, documentación y contacto.",
+      projectClientReimaginedStack: "Tecnologías de la web reimaginada",
+      projectClientReimaginedCode: "Ver código de la web reimaginada de Cliente 1 en GitHub",
+      projectVisit: "Visitar web",
+      projectCode: "Ver código",
       tagCode: "Codigo",
       tagProfile: "Perfil",
       tagLearning: "Aprendizaje",
@@ -56,7 +78,8 @@
       ogDescription: "Professional portfolio of Alex Cobián Benito: web application development, full stack solutions, DAW skills, AI-assisted automation, and Salesforce learning.",
       navCompetencies: "Skills",
       navStack: "Stack",
-      navProjects: "Presence",
+      navPresence: "Presence",
+      navProjects: "Projects",
       languageLabel: "Language:",
       languageSelectAria: "Select language",
       languageOptionEs: "Spanish",
@@ -83,8 +106,29 @@
       competencyQualityTitle: "Best practices and applied AI",
       competencyQualityBody: "Code organization, separation of responsibilities, specs driven development, prompt engineering, and AI agent handling as support for reviewing and optimizing solutions.",
       stackTitle: "Stack and tools",
-      projectsTitle: "Professional presence",
-      projectsBody: "Places where I present my profile, code, and Salesforce learning.",
+      presenceTitle: "Professional presence",
+      presenceBody: "Places where I present my profile, code, and Salesforce learning.",
+      projectsTitle: "Projects",
+      projectLiveTag: "Live website",
+      projectPkxpertiseBody: "Pokémon services platform with guided unit and team configuration, order tracking, and user support. A project that brings together a web interface and server-side logic in a live experience on its own domain.",
+      projectPkxpertiseStack: "PKXpertise technologies",
+      projectPkxpertiseVisit: "Visit the PKXpertise website",
+      projectPkxpertiseCode: "View PKXpertise code on GitHub",
+      projectUnpublishedTag: "Unpublished website",
+      projectClientIntuitiveTitle: "Client 1 · Intuitive website",
+      projectClientIntuitiveBody: "First website proposal for a client in the industrial battery sector, with a guided journey based on application, project stage, and interests, product exploration, and a technical enquiry form.",
+      projectClientIntuitiveStack: "Intuitive website technologies",
+      projectClientIntuitiveCode: "View code for Client 1's intuitive website on GitHub",
+      projectClientDevelopedTitle: "Client 1 · Expanded website",
+      projectClientDevelopedBody: "Second version for the same client, with orbital navigation, a technical catalogue, and sections covering applications, the company, processes, and documentation, connected to a technical and sales enquiry form.",
+      projectClientDevelopedStack: "Expanded website technologies",
+      projectClientDevelopedCode: "View code for Client 1's expanded website on GitHub",
+      projectClientReimaginedTitle: "Client 1 · Reimagined website",
+      projectClientReimaginedBody: "A multipage reinterpretation of the client's website, with orbital navigation and dedicated pages for systems, applications, methodology, documentation, and contact.",
+      projectClientReimaginedStack: "Reimagined website technologies",
+      projectClientReimaginedCode: "View code for Client 1's reimagined website on GitHub",
+      projectVisit: "Visit website",
+      projectCode: "View code",
       tagCode: "Code",
       tagProfile: "Profile",
       tagLearning: "Learning",
@@ -336,17 +380,18 @@
     function setOffset() {
       if (!header) {
         root.style.setProperty("--anchor-offset", "28px");
-        document.body.classList.add("menu-offset-ready");
         return;
       }
 
       const offset = Math.ceil(header.getBoundingClientRect().height + 24);
       root.style.setProperty("--anchor-offset", offset + "px");
-      document.body.classList.add("menu-offset-ready");
     }
 
     window.addEventListener("resize", setOffset);
     window.addEventListener("load", setOffset);
+    if (header && "ResizeObserver" in window) {
+      new ResizeObserver(setOffset).observe(header);
+    }
     setOffset();
   }
 

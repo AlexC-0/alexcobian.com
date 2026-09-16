@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260904-5" />
-  <script src="app.js?v=20260904-5" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260916-4" />
+  <script src="app.js?v=20260916-3" defer></script>
 </head>
 <body>
   <div class="mesh" aria-hidden="true"></div>
@@ -34,7 +34,8 @@
       <nav class="nav" aria-label="Navegacion principal">
         <a href="#competencias" data-i18n="navCompetencies">Competencias</a>
         <a href="#stack" data-i18n="navStack">Stack</a>
-        <a href="#proyectos" data-i18n="navProjects">Presencia</a>
+        <a href="#presencia" data-i18n="navPresence">Presencia</a>
+        <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
       </nav>
       <div class="top-actions">
         <div class="top-links">
@@ -175,10 +176,10 @@
       </div>
     </section>
 
-    <section id="proyectos" class="panel glass reveal section-gap-large section-anchor">
+    <section id="presencia" class="panel glass reveal section-gap-large section-anchor">
       <div class="section-head">
-        <h2 data-i18n="projectsTitle">Presencia profesional</h2>
-        <p data-i18n="projectsBody">Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.</p>
+        <h2 data-i18n="presenceTitle">Presencia profesional</h2>
+        <p data-i18n="presenceBody">Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.</p>
       </div>
       <div class="cards">
         <article class="card glass-soft">
@@ -236,6 +237,98 @@
             </svg>
             <span data-i18n="projectCvLink">Descargar PDF</span>
           </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="panel glass reveal section-gap-large section-anchor" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title" data-i18n="projectsTitle">Proyectos</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="card glass-soft project-card" aria-labelledby="project-pkxpertise-title">
+          <div class="project-meta">
+            <span class="tag tag-live" data-i18n="projectLiveTag">Web publicada</span>
+            <span class="project-domain">pkxpertise.com</span>
+          </div>
+          <h3 id="project-pkxpertise-title">PKXpertise</h3>
+          <p data-i18n="projectPkxpertiseBody">Plataforma de servicios Pokémon con configuración guiada de unidades y equipos, seguimiento de pedidos y soporte al usuario. Un proyecto que reúne interfaz web y lógica de servidor en una experiencia publicada con dominio propio.</p>
+          <ul class="project-stack" aria-label="Tecnologías de PKXpertise" data-i18n-aria-label="projectPkxpertiseStack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://pkxpertise.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de PKXpertise" data-i18n-aria-label="projectPkxpertiseVisit">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7"></path>
+                <path d="m10 14 11-11"></path>
+                <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
+              </svg>
+              <span data-i18n="projectVisit">Visitar web</span>
+            </a>
+            <a class="btn btn-primary" href="https://github.com/AlexC-0/PKXpertise" target="_blank" rel="noopener noreferrer" aria-label="Ver código de PKXpertise en GitHub" data-i18n-aria-label="projectPkxpertiseCode">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
+              </svg>
+              <span data-i18n="projectCode">Ver código</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="card glass-soft project-card" aria-labelledby="project-client-intuitive-title">
+          <div class="project-meta">
+            <span class="tag tag-unpublished" data-i18n="projectUnpublishedTag">Web no publicada</span>
+          </div>
+          <h3 id="project-client-intuitive-title" data-i18n="projectClientIntuitiveTitle">Cliente 1 · Web intuitiva</h3>
+          <p data-i18n="projectClientIntuitiveBody">Primera propuesta web para un cliente del sector de baterías industriales, con un recorrido guiado por aplicación, fase e interés, exploración de productos y formulario de consulta técnica.</p>
+          <ul class="project-stack" aria-label="Tecnologías de la web intuitiva" data-i18n-aria-label="projectClientIntuitiveStack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoCliente1-Version1-Intuitiva" target="_blank" rel="noopener noreferrer" aria-label="Ver código de la web intuitiva de Cliente 1 en GitHub" data-i18n-aria-label="projectClientIntuitiveCode">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
+              </svg>
+              <span data-i18n="projectCode">Ver código</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="card glass-soft project-card" aria-labelledby="project-client-developed-title">
+          <div class="project-meta">
+            <span class="tag tag-unpublished" data-i18n="projectUnpublishedTag">Web no publicada</span>
+          </div>
+          <h3 id="project-client-developed-title" data-i18n="projectClientDevelopedTitle">Cliente 1 · Web base desarrollada</h3>
+          <p data-i18n="projectClientDevelopedBody">Segunda versión para el mismo cliente, con navegación orbital, catálogo técnico y secciones de aplicaciones, empresa, proceso y documentación, conectadas con un formulario de contacto técnico-comercial.</p>
+          <ul class="project-stack" aria-label="Tecnologías de la web base desarrollada" data-i18n-aria-label="projectClientDevelopedStack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoCliente1-Version2-WebBaseDesarrollada" target="_blank" rel="noopener noreferrer" aria-label="Ver código de la web base desarrollada de Cliente 1 en GitHub" data-i18n-aria-label="projectClientDevelopedCode">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
+              </svg>
+              <span data-i18n="projectCode">Ver código</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="card glass-soft project-card" aria-labelledby="project-client-reimagined-title">
+          <div class="project-meta">
+            <span class="tag tag-unpublished" data-i18n="projectUnpublishedTag">Web no publicada</span>
+          </div>
+          <h3 id="project-client-reimagined-title" data-i18n="projectClientReimaginedTitle">Cliente 1 · Web reimaginada</h3>
+          <p data-i18n="projectClientReimaginedBody">Reinterpretación multipágina de la web del cliente, con navegación orbital y páginas dedicadas a sistemas, aplicaciones, método, documentación y contacto.</p>
+          <ul class="project-stack" aria-label="Tecnologías de la web reimaginada" data-i18n-aria-label="projectClientReimaginedStack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoCliente1-Version3-WebReimaginacion" target="_blank" rel="noopener noreferrer" aria-label="Ver código de la web reimaginada de Cliente 1 en GitHub" data-i18n-aria-label="projectClientReimaginedCode">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
+              </svg>
+              <span data-i18n="projectCode">Ver código</span>
+            </a>
+          </div>
         </article>
       </div>
     </section>

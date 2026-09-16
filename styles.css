@@ -32,10 +32,6 @@ body {
     linear-gradient(180deg, var(--bg2), var(--bg));
 }
 
-body.menu-offset-ready .section-anchor {
-  scroll-margin-top: var(--anchor-offset);
-}
-
 .mesh {
   position: fixed;
   inset: 0;
@@ -117,10 +113,15 @@ body.menu-offset-ready .section-anchor {
 }
 
 .nav {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   justify-content: center;
   justify-self: center;
   min-width: 0;
+}
+
+.nav a {
+  justify-content: center;
 }
 
 .top-actions {
@@ -482,7 +483,8 @@ h3 {
   gap: 9px;
 }
 
-.chips span {
+.chips span,
+.project-stack li {
   border: 1px solid rgba(143, 108, 70, 0.4);
   padding: 8px 11px;
   border-radius: 999px;
@@ -561,6 +563,94 @@ h3 {
 
 .card a span {
   min-width: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 24px;
+}
+
+.project-card h3 {
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  overflow-wrap: anywhere;
+}
+
+.project-card p {
+  max-width: 70ch;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-bottom: 14px;
+}
+
+.project-meta .tag {
+  margin-bottom: 0;
+  font-size: 0.75rem;
+}
+
+.project-meta .tag-live,
+.project-meta .tag-unpublished {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.tag-live::before,
+.tag-unpublished::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--secondary);
+}
+
+.tag-unpublished::before {
+  background: #c94747;
+}
+
+.project-domain {
+  color: var(--muted);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 20px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-actions .btn {
+  align-items: center;
+  min-height: 44px;
+}
+
+.project-actions .btn-primary {
+  color: #2f1f12;
 }
 
 .footer {
@@ -660,6 +750,8 @@ select:focus-visible {
   }
 
   .nav {
+    display: flex;
+    flex-wrap: wrap;
     grid-area: nav;
   }
 
@@ -754,9 +846,9 @@ select:focus-visible {
   }
 
   .nav {
+    display: grid;
     width: 100%;
     padding-bottom: 2px;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -774,7 +866,8 @@ select:focus-visible {
   }
 
   .competency-grid,
-  .cards {
+  .cards,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 }
