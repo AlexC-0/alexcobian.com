@@ -1,347 +1,433 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; form-action 'self'; upgrade-insecure-requests" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Alex Cobián Benito | Desarrollador software de aplicaciones web</title>
-  <meta name="description" content="Portfolio de Alex Cobián Benito, desarrollador software de aplicaciones web: React, Python, APIs, MVC y pruebas unitarias. Aprendizaje en Salesforce y Apex." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://alexcobian.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_ES" />
-  <meta property="og:title" content="Alex Cobián Benito | Desarrollador software de aplicaciones web" />
-  <meta property="og:description" content="Portfolio de Alex Cobián Benito, desarrollador software de aplicaciones web: React, Python, APIs, MVC y pruebas unitarias. Aprendizaje en Salesforce y Apex." />
-  <meta property="og:url" content="https://alexcobian.com/" />
-  <meta property="og:image" content="https://alexcobian.com/assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Alex Cobián Benito | Desarrollador software de aplicaciones web" />
-  <meta name="twitter:description" content="Portfolio de Alex Cobián Benito, desarrollador software de aplicaciones web: React, Python, APIs, MVC y pruebas unitarias. Aprendizaje en Salesforce y Apex." />
-  <meta name="twitter:image" content="https://alexcobian.com/assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2362452d'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='28' font-family='Arial' fill='%23fff8ef'%3EAC%3C/text%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260916-4" />
-  <script src="app.js?v=20261029-1" defer></script>
-</head>
-<body>
-  <div class="mesh" aria-hidden="true"></div>
-  <header class="topbar">
-    <div class="container topbar-inner glass">
-      <a class="brand" href="#inicio">Alex Cobián Benito</a>
-      <nav class="nav" aria-label="Navegacion principal">
-        <a href="#competencias" data-i18n="navCompetencies">Competencias</a>
-        <a href="#stack" data-i18n="navStack">Stack</a>
-        <a href="#presencia" data-i18n="navPresence">Presencia</a>
-        <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
-      </nav>
-      <div class="top-actions">
-        <div class="top-links">
-          <a href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
-              <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
-              <path d="M9 22v-3.5c-3.5.8-6-1.1-6-4.7 0-1.5.5-2.7 1.5-3.7-.2-.7-.5-2 .2-3.6 0 0 1.2-.4 3.8 1.5A13 13 0 0 1 12 7c1.2 0 2.4.2 3.5.6 2.6-1.9 3.8-1.5 3.8-1.5.7 1.6.4 2.9.2 3.6 1 1 1.5 2.2 1.5 3.7 0 3.6-2.5 5.5-6 4.7V22"></path>
-            </svg>
-            <span>GitHub</span>
-          </a>
-          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="4" y="4" width="16" height="16" rx="3"></rect>
-              <path d="M8 10v6"></path>
-              <path d="M8 8h.01"></path>
-              <path d="M12 16v-3.3a2.2 2.2 0 0 1 4.4 0V16"></path>
-            </svg>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5sc" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
-              <path d="M10 15.5 12 8l2 7.5"></path>
-            </svg>
-            <span>Salesforce Trailhead</span>
-          </a>
-        </div>
-        <div class="lang-switch glass-soft" data-language-switch>
-          <span class="lang-label" data-i18n="languageLabel">Idioma:</span>
-          <button class="lang-trigger" type="button" id="language-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-options" data-i18n-aria-label="languageSelectAria">
-            <span data-language-current>Espanol</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m6 9 6 6 6-6"></path>
-            </svg>
-          </button>
-          <div class="lang-options" id="language-options" role="listbox" aria-labelledby="language-trigger" hidden>
-            <button class="lang-option" type="button" role="option" aria-selected="true" data-language-option="es" data-i18n="languageOptionEs">Espanol</button>
-            <button class="lang-option" type="button" role="option" aria-selected="false" data-language-option="en" data-i18n="languageOptionEn">Ingles</button>
-          </div>
-        </div>
-      </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Alex Cobián Benito | Desarrollador Salesforce · Fullstack / Backend</title>
+    <meta name="description" content="Desarrollador Salesforce con proyectos de posventa, garantías e integración de tarifas. Desarrollo Fullstack / Backend, APIs y validación de datos." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alexcobian.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Alex Cobián Benito | Desarrollador Salesforce · Fullstack / Backend" />
+    <meta property="og:description" content="Desarrollador Salesforce con proyectos de posventa, garantías e integración de tarifas. Desarrollo Fullstack / Backend, APIs y validación de datos." />
+    <meta property="og:url" content="https://alexcobian.com/" />
+    <meta property="og:image" content="https://alexcobian.com/assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alex Cobián Benito | Desarrollador Salesforce · Fullstack / Backend" />
+    <meta name="twitter:description" content="Desarrollador Salesforce con proyectos de posventa, garantías e integración de tarifas. Desarrollo Fullstack / Backend, APIs y validación de datos." />
+    <meta name="twitter:image" content="https://alexcobian.com/assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2362452d'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='28' font-family='Arial' fill='%23fff8ef'%3EAC%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20261119-1" />
+    <script src="app.js?v=20261119-1" defer></script>
+  </head>
+  <body>
+    <a data-i18n="skipLink" class="skip-link" href="#inicio">Saltar al contenido</a>
+    <div class="mesh" aria-hidden="true">
     </div>
-  </header>
-
-  <main id="inicio" class="container main">
-    <section class="hero glass reveal" data-section-anchor>
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="eyebrow">Portfolio profesional</p>
-        <h1 data-i18n="heroTitle">Desarrollador software de aplicaciones web</h1>
-        <p class="lead" data-i18n="heroBody">
-          Soy desarrollador software de aplicaciones web y actualmente trabajo en Shackleton Innovation, en Bilbao, donde mantengo y desarrollo funcionalidades de frontend y backend. En el frontend trabajo principalmente con React y el patrón MVC, con una estructura que separa responsabilidades y facilita el mantenimiento del código, apoyada en pruebas unitarias. En el backend utilizo Python para desarrollar las APIs que conectan la interfaz con las funcionalidades de la aplicación. Además, sigo profundizando en Salesforce y Apex a través de Trailhead.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
-              <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
-              <path d="M9 22v-3.5c-3.5.8-6-1.1-6-4.7 0-1.5.5-2.7 1.5-3.7-.2-.7-.5-2 .2-3.6 0 0 1.2-.4 3.8 1.5A13 13 0 0 1 12 7c1.2 0 2.4.2 3.5.6 2.6-1.9 3.8-1.5 3.8-1.5.7 1.6.4 2.9.2 3.6 1 1 1.5 2.2 1.5 3.7 0 3.6-2.5 5.5-6 4.7V22"></path>
-            </svg>
-            <span data-i18n="ctaGithub">Ver GitHub</span>
-          </a>
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/acb000" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="4" y="4" width="16" height="16" rx="3"></rect>
-              <path d="M8 10v6"></path>
-              <path d="M8 8h.01"></path>
-              <path d="M12 16v-3.3a2.2 2.2 0 0 1 4.4 0V16"></path>
-            </svg>
-            <span data-i18n="ctaLinkedin">Ver LinkedIn</span>
-          </a>
-          <a class="btn btn-primary" href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5sc" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
-              <path d="M10 15.5 12 8l2 7.5"></path>
-            </svg>
-            <span data-i18n="ctaTrailhead">Ver Salesforce Trailhead</span>
-          </a>
-          <a class="btn btn-primary" href="assets/alex-cobian-benito-cv-2026.pdf?v=20261029-1" download>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path>
-              <path d="M14 2v5h5"></path>
-              <path d="M12 11v6"></path>
-              <path d="m9 14 3 3 3-3"></path>
-            </svg>
-            <span data-i18n="ctaCv">Descargar CV</span>
-          </a>
+    <header class="topbar">
+      <div class="container topbar-inner glass">
+        <a class="brand" href="#inicio">Alex Cobián Benito</a>
+        <nav class="nav" aria-label="Navegación principal" data-i18n-aria-label="navAria">
+          <a data-i18n="navProjects" href="#proyectos">Proyectos</a>
+          <a data-i18n="navCompetencies" href="#competencias">Competencias</a>
+          <a data-i18n="navStack" href="#stack">Tecnologías</a>
+          <a data-i18n="navPresence" href="#presencia">Contacto y CV</a>
+        </nav>
+        <div class="top-actions">
+          <div class="top-links">
+            <a href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
+                <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
+                <path d="M9 22v-3.5c-3.5.8-6-1.1-6-4.7 0-1.5.5-2.7 1.5-3.7-.2-.7-.5-2 .2-3.6 0 0 1.2-.4 3.8 1.5A13 13 0 0 1 12 7c1.2 0 2.4.2 3.5.6 2.6-1.9 3.8-1.5 3.8-1.5.7 1.6.4 2.9.2 3.6 1 1 1.5 2.2 1.5 3.7 0 3.6-2.5 5.5-6 4.7V22"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/acb000/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+                <path d="M8 10v6"></path>
+                <path d="M8 8h.01"></path>
+                <path d="M12 16v-3.3a2.2 2.2 0 0 1 4.4 0V16"></path>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5sc" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
+                <path d="M10 15.5 12 8l2 7.5"></path>
+              </svg>
+              <span>Trailblazer</span>
+            </a>
+          </div>
+          <div class="lang-switch glass-soft" data-language-switch>
+            <span class="lang-label" data-i18n="languageLabel">Idioma:</span>
+            <button class="lang-trigger" type="button" id="language-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-options" data-i18n-aria-label="languageSelectAria">
+              <span data-language-current>Español</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="lang-options" id="language-options" role="listbox" aria-labelledby="language-trigger" hidden>
+              <button class="lang-option" type="button" role="option" aria-selected="true" data-language-option="es" data-i18n="languageOptionEs">Español</button>
+              <button class="lang-option" type="button" role="option" aria-selected="false" data-language-option="en" data-i18n="languageOptionEn">Inglés</button>
+            </div>
+          </div>
         </div>
       </div>
-      <aside class="profile-card glass-soft">
-        <figure class="profile-photo">
-          <img src="assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" alt="Foto profesional de Alex Cobián Benito" decoding="async" fetchpriority="high" />
-          <span data-i18n="photoFallback">Coloca tu foto en assets/alex-cobian-benito-profile-20260904.jpg</span>
-        </figure>
-      </aside>
-    </section>
-
-    <section id="competencias" class="panel glass reveal section-anchor">
-      <h2 data-i18n="competenciesTitle">Competencias tecnicas</h2>
-      <div class="competency-grid">
-        <article>
-          <h3 data-i18n="competencyFrontendTitle">Desarrollo Frontend</h3>
-          <p data-i18n="competencyFrontendBody">Construccion de interfaces web con HTML5, CSS, JavaScript, TypeScript y React, incluyendo manipulacion del DOM, formularios, eventos, interacciones y peticiones asincronas.</p>
-        </article>
-        <article>
-          <h3 data-i18n="competencyBackendTitle">Backend y APIs</h3>
-          <p data-i18n="competencyBackendBody">Programación de lógica de servidor con Python, PHP y Node.js, desarrollo de APIs, análisis de incidencias, validación de datos y manejo de errores.</p>
-        </article>
-        <article>
-          <h3 data-i18n="competencyDataTitle">Bases de datos</h3>
-          <p data-i18n="competencyDataBody">Modelado, consultas y gestion de datos con MySQL, SQL Server y Access, prestando atencion a filtros, valores nulos, estados y datos reales.</p>
-        </article>
-        <article>
-          <h3 data-i18n="competencyDeployTitle">Entornos y despliegue</h3>
-          <p data-i18n="competencyDeployBody">Configuracion de entornos con XAMPP, Apache, Nginx y Docker, control de versiones con Git y GitHub, y trabajo diario con Visual Studio Code.</p>
-        </article>
-        <article>
-          <h3 data-i18n="competencyMobileTitle">Software y multiplataforma</h3>
-          <p data-i18n="competencyMobileBody">Base en Java, Kotlin, Jetpack Compose y Visual Basic .NET para ampliar el criterio tecnico mas alla del desarrollo web y entender distintos entornos de aplicacion.</p>
-        </article>
-        <article>
-          <h3 data-i18n="competencyQualityTitle">Buenas practicas e IA aplicada</h3>
-          <p data-i18n="competencyQualityBody">Organización de código, separación de responsabilidades con MVC, pruebas unitarias, specs driven development, prompt engineering y manejo de agentes de IA como apoyo para revisar y optimizar soluciones.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="stack" class="panel glass reveal section-anchor">
-      <h2 data-i18n="stackTitle">Stack y herramientas</h2>
-      <div class="chips">
-        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
-        <span>Python</span><span>PHP</span><span>Node.js</span><span>Java</span><span>MySQL</span>
-        <span>SQL Server</span><span>Access</span><span>APIs</span><span>Docker</span>
-        <span>Git</span><span>Visual Studio Code</span><span>XAMPP</span><span>Apache</span>
-        <span>Nginx</span><span>Kotlin</span><span>Jetpack Compose</span><span>Visual Basic .NET</span>
-        <span>Apex</span><span>Salesforce Trailhead</span><span>Specs Driven Development</span>
-        <span>Prompt engineering</span><span>Manejo de agentes</span><span>Claude/Codex</span>
-      </div>
-    </section>
-
-    <section id="presencia" class="panel glass reveal section-gap-large section-anchor">
-      <div class="section-head">
-        <h2 data-i18n="presenceTitle">Presencia profesional</h2>
-        <p data-i18n="presenceBody">Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.</p>
-      </div>
-      <div class="cards">
-        <article class="card glass-soft">
-          <span class="tag" data-i18n="tagCode">Codigo</span>
-          <h3>GitHub</h3>
-          <p data-i18n="projectGithubBody">Repositorios y evolucion de mis proyectos tecnicos.</p>
-          <a href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 18c-2 0-3-1.2-3.5-2.4"></path>
-              <path d="M16 18c2 0 3-1.2 3.5-2.4"></path>
-              <path d="M9 22v-3.5c-3.5.8-6-1.1-6-4.7 0-1.5.5-2.7 1.5-3.7-.2-.7-.5-2 .2-3.6 0 0 1.2-.4 3.8 1.5A13 13 0 0 1 12 7c1.2 0 2.4.2 3.5.6 2.6-1.9 3.8-1.5 3.8-1.5.7 1.6.4 2.9.2 3.6 1 1 1.5 2.2 1.5 3.7 0 3.6-2.5 5.5-6 4.7V22"></path>
-            </svg>
-            <span>github.com/AlexC-0</span>
-          </a>
-        </article>
-
-        <article class="card glass-soft">
-          <span class="tag" data-i18n="tagProfile">Perfil</span>
-          <h3>LinkedIn</h3>
-          <p data-i18n="projectLinkedinBody">Resumen profesional y red de contactos.</p>
-          <a href="https://www.linkedin.com/in/acb000" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="4" y="4" width="16" height="16" rx="3"></rect>
-              <path d="M8 10v6"></path>
-              <path d="M8 8h.01"></path>
-              <path d="M12 16v-3.3a2.2 2.2 0 0 1 4.4 0V16"></path>
-            </svg>
-            <span>linkedin.com/in/acb000</span>
-          </a>
-        </article>
-
-        <article class="card glass-soft">
-          <span class="tag" data-i18n="tagLearning">Aprendizaje</span>
-          <h3>Salesforce Trailhead</h3>
-          <p data-i18n="projectTrailheadBody">Perfil activo en Salesforce Trailhead, centrado en aprendizaje practico del ecosistema y APEX.</p>
-          <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5sc" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 15.5a2.5 2.5 0 1 1 .8-4.9A4.5 4.5 0 0 1 16 9a3.5 3.5 0 1 1 .5 7H7z"></path>
-              <path d="M10 15.5 12 8l2 7.5"></path>
-            </svg>
-            <span>salesforce.com/trailblazer/sginc6pv5i7x46y5sc</span>
-          </a>
-        </article>
-
-        <article class="card glass-soft">
-          <span class="tag" data-i18n="tagCv">CV</span>
-          <h3 data-i18n="projectCvTitle">Curriculum profesional</h3>
-          <p data-i18n="projectCvBody">CV actualizado en PDF con mi perfil, formacion y competencias tecnicas principales.</p>
-          <a href="assets/alex-cobian-benito-cv-2026.pdf?v=20261029-1" download>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path>
-              <path d="M14 2v5h5"></path>
-              <path d="M12 11v6"></path>
-              <path d="m9 14 3 3 3-3"></path>
-            </svg>
-            <span data-i18n="projectCvLink">Descargar PDF</span>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section id="proyectos" class="panel glass reveal section-gap-large section-anchor" aria-labelledby="projects-title">
-      <div class="section-head">
-        <h2 id="projects-title" data-i18n="projectsTitle">Proyectos</h2>
-      </div>
-      <div class="projects-grid">
-        <article class="card glass-soft project-card" aria-labelledby="project-pkxpertise-title">
-          <div class="project-meta">
-            <span class="tag tag-live" data-i18n="projectLiveTag">Web publicada</span>
-            <span class="project-domain">pkxpertise.com</span>
+    </header>
+    <main id="inicio" class="container main" tabindex="-1">
+      <section class="hero glass reveal" data-section-anchor>
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">Portfolio profesional</p>
+          <h1 data-i18n="heroTitle">Desarrollador Salesforce</h1>
+          <p class="hero-specialty">Fullstack / Backend</p>
+          <p class="lead" data-i18n="heroBody">Desarrollo aplicaciones Salesforce para automatizar procesos, integrar servicios y mantener datos coherentes. Complemento este enfoque con desarrollo Fullstack / Backend: interfaces React, APIs y persistencia SQL. Aquí puedes consultar mis proyectos, sus decisiones técnicas y las evidencias disponibles.</p>
+          <div class="cta-row">
+            <a data-i18n="ctaProjects" class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a data-i18n="ctaContact" class="btn btn-ghost" href="#presencia">Contacto y CV</a>
           </div>
-          <h3 id="project-pkxpertise-title">PKXpertise</h3>
-          <p data-i18n="projectPkxpertiseBody">Plataforma de servicios Pokémon con configuración guiada de unidades y equipos, seguimiento de pedidos y soporte al usuario. Un proyecto que reúne interfaz web y lógica de servidor en una experiencia publicada con dominio propio.</p>
-          <ul class="project-stack" aria-label="Tecnologías de PKXpertise" data-i18n-aria-label="projectPkxpertiseStack">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
-          </ul>
-          <div class="project-actions">
-            <a class="btn btn-primary" href="https://pkxpertise.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de PKXpertise" data-i18n-aria-label="projectPkxpertiseVisit">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M14 3h7v7"></path>
-                <path d="m10 14 11-11"></path>
-                <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
-              </svg>
-              <span data-i18n="projectVisit">Visitar web</span>
+        </div>
+        <aside class="profile-card glass-soft">
+          <figure class="profile-photo">
+            <img src="assets/alex-cobian-benito-profile-20260904.jpg?v=20260904-1" alt="Retrato de Alex Cobián Benito" data-i18n-alt="photoAlt" width="377" height="377" decoding="async" fetchpriority="high" />
+            <span data-i18n="photoFallback">Alex Cobián Benito</span>
+          </figure>
+        </aside>
+      </section>
+      <section id="proyectos" class="panel glass section-anchor" aria-labelledby="projects-title">
+        <div class="section-head">
+          <h2 data-i18n="projectsTitle" id="projects-title">Proyectos y soluciones</h2>
+          <p data-i18n="projectsBody">Proyectos personales con código y evidencias técnicas. Los entornos de desarrollo y las propuestas sin publicar se indican en cada caso.</p>
+        </div>
+        <h3 data-i18n="salesforceProjects" class="project-group-title">Salesforce</h3>
+        <div class="projects-grid salesforce-projects">
+          <article id="posventa" class="card glass-soft project-card" aria-labelledby="posventa-title">
+            <span data-i18n="posventaStatus" class="tag">Código · Validado en Salesforce de desarrollo</span>
+            <h4 data-i18n="posventaTitle" id="posventa-title">Posventa y garantías</h4>
+            <p data-i18n="posventaBody">Gestionar incidencias de productos y seguir cada caso hasta su resolución. La aplicación organiza la asignación y registra la evaluación de una garantía simulada.</p>
+            <p data-i18n="posventaFeatures" class="project-features">Colas y permisos por función, validaciones de datos, consulta LWC e informe de casos pendientes.</p>
+            <ul class="project-stack">
+              <li>Salesforce</li>
+              <li>Apex · SOQL</li>
+              <li>Flow</li>
+              <li>LWC</li>
+              <li>Apex · Jest</li>
+            </ul>
+            <details>
+              <summary data-i18n="technicalDetails">Detalles y alcance</summary>
+              <p data-i18n="posventaDetail">Account, Contact, Asset y Case relacionados; Flow coordina la entrada y evaluación, y Apex protege la autorización y el cierre. La documentación registra 106 pruebas Apex y 23 Jest. Despliegue incremental comprobado; instalación limpia no ejecutada. Datos ficticios, sin demo pública.</p>
+            </details>
+            <div class="project-actions">
+              <a href="https://github.com/AlexC-0/posventa-garantias-salesforce" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-describedby="posventa-title">
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+              <a href="https://github.com/AlexC-0/posventa-garantias-salesforce/blob/main/docs/ACEPTACION-V1.md" target="_blank" rel="noopener noreferrer" class="evidence-link" aria-describedby="posventa-title">
+                <span data-i18n="projectEvidence">Evidencias documentadas</span>
+              </a>
+            </div>
+          </article>
+          <article id="tarifas" class="card glass-soft project-card" aria-labelledby="tarifas-title">
+            <span data-i18n="tarifasStatus" class="tag">Código · Validado en Salesforce de desarrollo</span>
+            <h4 data-i18n="tarifasTitle" id="tarifas-title">Consulta de tarifas de proveedor</h4>
+            <p data-i18n="tarifasBody">Consultar tarifas externas desde Salesforce y conservar el resultado para futuras consultas. Un proveedor simulado devuelve precios que se validan antes de guardar una instantánea privada.</p>
+            <p data-i18n="tarifasFeatures" class="project-features">LWC de consulta e histórico, integración HTTP autenticada e instantáneas inmutables consultables sin proveedor.</p>
+            <ul class="project-stack">
+              <li>Apex · SOQL</li>
+              <li>LWC</li>
+              <li>Named / External Credentials</li>
+              <li>Node.js · TypeScript</li>
+              <li>Fastify</li>
+            </ul>
+            <details>
+              <summary data-i18n="technicalDetails">Detalles y alcance</summary>
+              <p data-i18n="tarifasDetail">V1 cerrada con límites documentados. Sin reintentos programados en la aplicación; el transporte externo registró recepciones duplicadas ante 429/503, por lo que no se garantiza entrega única ni idempotencia entre acciones. Despliegue incremental comprobado; instalación limpia solo documentada. Sin demo pública.</p>
+            </details>
+            <div class="project-actions">
+              <a href="https://github.com/AlexC-0/consulta-tarifas-salesforce" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-describedby="tarifas-title">
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+              <a href="https://github.com/AlexC-0/consulta-tarifas-salesforce/blob/main/docs/FICHA-V1.md" target="_blank" rel="noopener noreferrer" class="evidence-link" aria-describedby="tarifas-title">
+                <span data-i18n="projectEvidence">Evidencias documentadas</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <h3 data-i18n="backendProjects" class="project-group-title">Fullstack / Backend</h3>
+        <div class="projects-grid">
+          <article id="importacion" class="card glass-soft project-card" aria-labelledby="importacion-title">
+            <span data-i18n="importacionStatus" class="tag">Código · Ejecución local</span>
+            <h4 data-i18n="importacionTitle" id="importacion-title">Importación y validación de datos</h4>
+            <p data-i18n="importacionBody">Importar catálogos CSV sin aceptar datos incompletos o duplicados. La API valida los registros y confirma cada importación completa en PostgreSQL.</p>
+            <p data-i18n="importacionFeatures" class="project-features">Errores por fila, transacciones, recuperación de archivos idénticos e historial paginado.</p>
+            <ul class="project-stack">
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <details>
+              <summary data-i18n="technicalDetails">Detalles y alcance</summary>
+              <p data-i18n="importacionDetail">La identidad se basa en los bytes del archivo: reenviar el mismo CSV confirmado recupera el resultado. Otros archivos con SKU existentes se rechazan. Sin frontend, autenticación ni despliegue público; no se acreditan pruebas de carga.</p>
+            </details>
+            <div class="project-actions">
+              <a href="https://github.com/AlexC-0/importacion-validacion-datos" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-describedby="importacion-title">
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+              <a href="https://github.com/AlexC-0/importacion-validacion-datos/blob/main/docs/EVIDENCIAS_V1.md" target="_blank" rel="noopener noreferrer" class="evidence-link" aria-describedby="importacion-title">
+                <span data-i18n="projectEvidence">Evidencias documentadas</span>
+              </a>
+            </div>
+          </article>
+          <article id="solicitudes" class="card glass-soft project-card" aria-labelledby="solicitudes-title">
+            <span data-i18n="solicitudesStatus" class="tag">Código · Ejecución local</span>
+            <h4 data-i18n="solicitudesTitle" id="solicitudes-title">Solicitudes y aprobaciones</h4>
+            <p data-i18n="solicitudesBody">Organizar solicitudes internas de material, software y formación. Una interfaz React permite crear borradores, enviarlos y consultar las decisiones del responsable asignado.</p>
+            <p data-i18n="solicitudesFeatures" class="project-features">Estados y roles, autorización en servidor, historial de decisiones y filtros con paginación.</p>
+            <ul class="project-stack">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node.js · Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <details>
+              <summary data-i18n="technicalDetails">Detalles y alcance</summary>
+              <p data-i18n="solicitudesDetail">Usuarios ficticios y sesiones persistidas en PostgreSQL. La aprobación, el rechazo y la cancelación son terminales; el historial está limitado a autor y responsable. La aceptación documenta pruebas de API, frontend, integración y E2E. Sin despliegue público.</p>
+            </details>
+            <div class="project-actions">
+              <a href="https://github.com/AlexC-0/gestion-solicitudes-aprobaciones" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-describedby="solicitudes-title">
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+              <a href="https://github.com/AlexC-0/gestion-solicitudes-aprobaciones/blob/main/docs/ACEPTACION-V1.md" target="_blank" rel="noopener noreferrer" class="evidence-link" aria-describedby="solicitudes-title">
+                <span data-i18n="projectEvidence">Evidencias documentadas</span>
+              </a>
+            </div>
+          </article>
+          <article id="eventos" class="card glass-soft project-card" aria-labelledby="eventos-title">
+            <span data-i18n="eventosStatus" class="tag">Código · Ejecución local</span>
+            <h4 data-i18n="eventosTitle" id="eventos-title">Entrega fiable de eventos de pedidos</h4>
+            <p data-i18n="eventosBody">Recibir y conservar eventos HTTP de pedidos para procesarlos y consultar su entrega. Una cola persistente coordina el trabajador y un receptor de demostración.</p>
+            <p data-i18n="eventosFeatures" class="project-features">Autenticación, reintentos acotados, historial de intentos y deduplicación transaccional en el receptor.</p>
+            <ul class="project-stack">
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <details>
+              <summary data-i18n="technicalDetails">Detalles y alcance</summary>
+              <p data-i18n="eventosDetail">Los envíos pueden repetirse. El receptor evita duplicar su preparación ficticia dentro de una transacción propia; esto no garantiza entrega exactamente una vez a servicios externos. Sin frontend, despliegue público ni pruebas de carga o alta disponibilidad.</p>
+            </details>
+            <div class="project-actions">
+              <a href="https://github.com/AlexC-0/entrega-fiable-eventos-pedidos" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-describedby="eventos-title">
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+              <a href="https://github.com/AlexC-0/entrega-fiable-eventos-pedidos/blob/main/docs/ENTREGA.md" target="_blank" rel="noopener noreferrer" class="evidence-link" aria-describedby="eventos-title">
+                <span data-i18n="projectEvidence">Evidencias documentadas</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <h3 data-i18n="earlierProjects" class="project-group-title">Otros trabajos</h3>
+        <div class="projects-grid">
+          <article class="card glass-soft project-card" aria-labelledby="project-pkxpertise-title">
+            <div class="project-meta">
+              <span class="tag tag-live" data-i18n="projectLiveTag">Web publicada</span>
+              <span class="project-domain">pkxpertise.com</span>
+            </div>
+            <h4 id="project-pkxpertise-title">PKXpertise</h4>
+            <p data-i18n="projectPkxpertiseBody">Plataforma de servicios Pokémon con configuración guiada de unidades y equipos, seguimiento de pedidos y soporte al usuario. Un proyecto que reúne interfaz web y lógica de servidor en una experiencia publicada con dominio propio.</p>
+            <ul class="project-stack" aria-label="Tecnologías de PKXpertise" data-i18n-aria-label="projectPkxpertiseStack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://pkxpertise.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de PKXpertise" data-i18n-aria-label="projectPkxpertiseVisit">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 3h7v7"></path>
+                  <path d="m10 14 11-11"></path>
+                  <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
+                </svg>
+                <span data-i18n="projectVisit">Visitar web</span>
+              </a>
+              <a class="btn btn-primary" href="https://github.com/AlexC-0/PKXpertise" target="_blank" rel="noopener noreferrer" aria-label="Ver código de PKXpertise en GitHub" data-i18n-aria-label="projectPkxpertiseCode">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
+                </svg>
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+            </div>
+          </article>
+          <article class="card glass-soft project-card client-case">
+            <span data-i18n="clientStatus" class="tag">Tres propuestas · Sin publicación</span>
+            <h4 data-i18n="clientTitle">Web para baterías industriales</h4>
+            <p data-i18n="clientBody">Tres versiones para un mismo cliente, con enfoques distintos de navegación y presentación del catálogo.</p>
+            <ul class="project-stack">
+              <li>HTML · CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+            </ul>
+            <details>
+              <summary data-i18n="projectClientIntuitiveTitle">Web intuitiva</summary>
+              <p data-i18n="projectClientIntuitiveBody">Primera propuesta web para un cliente del sector de baterías industriales, con un recorrido guiado por aplicación, fase e interés, exploración de productos y formulario de consulta técnica.</p>
+              <a href="https://github.com/AlexC-0/ProyectoCliente1-Version1-Intuitiva" target="_blank" rel="noopener noreferrer" class="">
+                <span data-i18n="projectClientIntuitiveCode">Código de esta propuesta</span>
+              </a>
+            </details>
+            <details>
+              <summary data-i18n="projectClientDevelopedTitle">Web base desarrollada</summary>
+              <p data-i18n="projectClientDevelopedBody">Segunda versión para el mismo cliente, con navegación orbital, catálogo técnico y secciones de aplicaciones, empresa, proceso y documentación, conectadas con un formulario de contacto técnico-comercial.</p>
+              <a href="https://github.com/AlexC-0/ProyectoCliente1-Version2-WebBaseDesarrollada" target="_blank" rel="noopener noreferrer" class="">
+                <span data-i18n="projectClientDevelopedCode">Código de esta propuesta</span>
+              </a>
+            </details>
+            <details>
+              <summary data-i18n="projectClientReimaginedTitle">Web reimaginada</summary>
+              <p data-i18n="projectClientReimaginedBody">Reinterpretación multipágina de la web del cliente, con navegación orbital y páginas dedicadas a sistemas, aplicaciones, método, documentación y contacto.</p>
+              <a href="https://github.com/AlexC-0/ProyectoCliente1-Version3-WebReimaginacion" target="_blank" rel="noopener noreferrer" class="">
+                <span data-i18n="projectClientReimaginedCode">Código de esta propuesta</span>
+              </a>
+            </details>
+          </article>
+          <article id="gr-inn" class="card glass-soft project-card" aria-labelledby="gr-inn-title">
+            <span class="tag" data-i18n="grStatus">Proyecto académico · Código disponible</span>
+            <h4 id="gr-inn-title">GR-Inn</h4>
+            <p data-i18n="grBody">Aplicación web para la compraventa de muebles y recambios 3D, orientada a la reutilización y reparación.</p>
+            <p data-i18n="grFeatures">Catálogo, anuncios, favoritos, carrito y mensajes entre usuarios.</p>
+            <ul class="project-stack">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>HTML · CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <p data-i18n="grAvailability">Sin demostración pública verificada.</p>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoTFGAno2GradoSuperiorDAW" target="_blank" rel="noopener noreferrer" aria-describedby="gr-inn-title">
+                <span data-i18n="projectCode">Ver código</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="competencias" class="panel glass section-anchor">
+        <h2 data-i18n="competenciesTitle">Competencias aplicadas</h2>
+        <div class="competency-grid">
+          <article>
+            <h3 data-i18n="skillSalesforce">Salesforce · Datos y automatización</h3>
+            <p data-i18n="skillSalesforceBody">Apex, SOQL, Flow, objetos y relaciones, validaciones, permisos y acceso a registros. Aplicados al ciclo de casos y la evaluación de garantías.</p>
+            <a data-i18n="skillSalesforceLink" href="#posventa">Ver posventa y garantías</a>
+          </article>
+          <article>
+            <h3 data-i18n="skillIntegration">Salesforce · Interfaz e integración</h3>
+            <p data-i18n="skillIntegrationBody">Lightning Web Components, HTTP y APIs REST con Named/External Credentials. Validación de respuestas, autorización e histórico privado.</p>
+            <a data-i18n="skillIntegrationLink" href="#tarifas">Ver consulta de tarifas</a>
+          </article>
+          <article>
+            <h3 data-i18n="skillFrontend">Fullstack · Interfaces y procesos</h3>
+            <p data-i18n="skillFrontendBody">JavaScript, TypeScript y React para formularios, estados, tratamiento de errores y navegación. Backend Node.js con Express y Fastify.</p>
+            <a data-i18n="skillFrontendLink" href="#solicitudes">Ver solicitudes y aprobaciones</a>
+          </article>
+          <article>
+            <h3 data-i18n="skillData">Backend · Integridad de datos</h3>
+            <p data-i18n="skillDataBody">SQL y PostgreSQL, transacciones y restricciones. Importaciones atómicas, idempotencia acotada y deduplicación de efectos en un receptor controlado.</p>
+            <a data-i18n="skillDataLink" href="#importacion">Ver importación de datos</a>
+          </article>
+          <article>
+            <h3 data-i18n="skillQuality">Pruebas y mantenimiento</h3>
+            <p data-i18n="skillQualityBody">Pruebas Apex y Jest en Salesforce; pruebas de API, integración con PostgreSQL y recorridos E2E en los proyectos web. Git y GitHub para control de versiones y consulta del código.</p>
+            <a data-i18n="skillQualityLink" href="#eventos">Ver entrega de eventos</a>
+          </article>
+          <article>
+            <h3 data-i18n="skillBackground">Experiencia web y formación complementaria</h3>
+            <p data-i18n="skillBackgroundBody">Base previa en Python y APIs, PHP, HTML y CSS. Formación complementaria en Java, Kotlin, Jetpack Compose y .NET; aprendizaje continuo de Salesforce mediante Trailhead.</p>
+            <a data-i18n="skillBackgroundLink" href="#presencia">Ver perfiles profesionales</a>
+          </article>
+        </div>
+      </section>
+      <section id="stack" class="panel glass section-anchor">
+        <h2 data-i18n="stackTitle">Tecnologías por función</h2>
+        <h3 data-i18n="sfStack">Salesforce</h3>
+        <div class="chips">
+          <span>Apex</span>
+          <span>SOQL</span>
+          <span>Lightning Web Components</span>
+          <span>Flow</span>
+          <span>Named / External Credentials</span>
+        </div>
+        <h3 data-i18n="webStack">Fullstack / Backend</h3>
+        <div class="chips">
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>Fastify</span>
+          <span>SQL · PostgreSQL</span>
+        </div>
+        <h3 data-i18n="testStack">Pruebas y herramientas</h3>
+        <div class="chips">
+          <span>Apex</span>
+          <span>Jest</span>
+          <span>Vitest</span>
+          <span>Playwright</span>
+          <span>Git · GitHub</span>
+        </div>
+      </section>
+      <section id="presencia" class="panel glass section-anchor">
+        <h2 data-i18n="presenceTitle">Contacto, código y CV</h2>
+        <p data-i18n="presenceBody" class="section-copy">Puedes contactar conmigo a través de LinkedIn y consultar mi código y formación en estos perfiles.</p>
+        <div class="cards">
+          <article class="card glass-soft">
+            <h3>LinkedIn</h3>
+            <p data-i18n="contactLinkedin">Perfil profesional y contacto.</p>
+            <a href="https://www.linkedin.com/in/acb000/" target="_blank" rel="noopener noreferrer" class="">
+              <span data-i18n="contactLinkedinLink">Contactar en LinkedIn</span>
             </a>
-            <a class="btn btn-primary" href="https://github.com/AlexC-0/PKXpertise" target="_blank" rel="noopener noreferrer" aria-label="Ver código de PKXpertise en GitHub" data-i18n-aria-label="projectPkxpertiseCode">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
-              </svg>
-              <span data-i18n="projectCode">Ver código</span>
+          </article>
+          <article class="card glass-soft">
+            <h3>GitHub</h3>
+            <p data-i18n="contactGithub">Repositorios, código y documentación técnica.</p>
+            <a href="https://github.com/AlexC-0" target="_blank" rel="noopener noreferrer" class="">
+              <span data-i18n="contactGithubLink">Explorar GitHub</span>
             </a>
-          </div>
-        </article>
-
-        <article class="card glass-soft project-card" aria-labelledby="project-client-intuitive-title">
-          <div class="project-meta">
-            <span class="tag tag-unpublished" data-i18n="projectUnpublishedTag">Web no publicada</span>
-          </div>
-          <h3 id="project-client-intuitive-title" data-i18n="projectClientIntuitiveTitle">Cliente 1 · Web intuitiva</h3>
-          <p data-i18n="projectClientIntuitiveBody">Primera propuesta web para un cliente del sector de baterías industriales, con un recorrido guiado por aplicación, fase e interés, exploración de productos y formulario de consulta técnica.</p>
-          <ul class="project-stack" aria-label="Tecnologías de la web intuitiva" data-i18n-aria-label="projectClientIntuitiveStack">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
-          </ul>
-          <div class="project-actions">
-            <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoCliente1-Version1-Intuitiva" target="_blank" rel="noopener noreferrer" aria-label="Ver código de la web intuitiva de Cliente 1 en GitHub" data-i18n-aria-label="projectClientIntuitiveCode">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
-              </svg>
-              <span data-i18n="projectCode">Ver código</span>
+          </article>
+          <article class="card glass-soft">
+            <h3>Salesforce Trailblazer</h3>
+            <p data-i18n="contactTrailblazer">Formación complementaria en el ecosistema Salesforce.</p>
+            <a href="https://www.salesforce.com/trailblazer/sginc6pv5i7x46y5sc" target="_blank" rel="noopener noreferrer" class="">
+              <span data-i18n="contactTrailblazerLink">Ver Trailblazer</span>
             </a>
-          </div>
-        </article>
-
-        <article class="card glass-soft project-card" aria-labelledby="project-client-developed-title">
-          <div class="project-meta">
-            <span class="tag tag-unpublished" data-i18n="projectUnpublishedTag">Web no publicada</span>
-          </div>
-          <h3 id="project-client-developed-title" data-i18n="projectClientDevelopedTitle">Cliente 1 · Web base desarrollada</h3>
-          <p data-i18n="projectClientDevelopedBody">Segunda versión para el mismo cliente, con navegación orbital, catálogo técnico y secciones de aplicaciones, empresa, proceso y documentación, conectadas con un formulario de contacto técnico-comercial.</p>
-          <ul class="project-stack" aria-label="Tecnologías de la web base desarrollada" data-i18n-aria-label="projectClientDevelopedStack">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
-          </ul>
-          <div class="project-actions">
-            <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoCliente1-Version2-WebBaseDesarrollada" target="_blank" rel="noopener noreferrer" aria-label="Ver código de la web base desarrollada de Cliente 1 en GitHub" data-i18n-aria-label="projectClientDevelopedCode">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
-              </svg>
-              <span data-i18n="projectCode">Ver código</span>
-            </a>
-          </div>
-        </article>
-
-        <article class="card glass-soft project-card" aria-labelledby="project-client-reimagined-title">
-          <div class="project-meta">
-            <span class="tag tag-unpublished" data-i18n="projectUnpublishedTag">Web no publicada</span>
-          </div>
-          <h3 id="project-client-reimagined-title" data-i18n="projectClientReimaginedTitle">Cliente 1 · Web reimaginada</h3>
-          <p data-i18n="projectClientReimaginedBody">Reinterpretación multipágina de la web del cliente, con navegación orbital y páginas dedicadas a sistemas, aplicaciones, método, documentación y contacto.</p>
-          <ul class="project-stack" aria-label="Tecnologías de la web reimaginada" data-i18n-aria-label="projectClientReimaginedStack">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
-          </ul>
-          <div class="project-actions">
-            <a class="btn btn-primary" href="https://github.com/AlexC-0/ProyectoCliente1-Version3-WebReimaginacion" target="_blank" rel="noopener noreferrer" aria-label="Ver código de la web reimaginada de Cliente 1 en GitHub" data-i18n-aria-label="projectClientReimaginedCode">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
-              </svg>
-              <span data-i18n="projectCode">Ver código</span>
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container footer">
-    <p data-i18n="footerText">(c) 2026 Alex Cobián Benito | Portfolio profesional</p>
-  </footer>
-
-  <button class="scroll-top" type="button" aria-label="Volver arriba" title="Volver arriba" data-i18n-aria-label="scrollTopLabel" data-i18n-title="scrollTopLabel">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 6l-7 7h4v5h6v-5h4z"></path>
-    </svg>
-  </button>
-</body>
+          </article>
+          <article id="cv" class="card glass-soft">
+            <h3 data-i18n="cvTitle">Currículum</h3>
+            <p data-i18n="cvBody">Perfil, proyectos y formación. Ambos documentos están en español.</p>
+            <div class="cv-downloads">
+              <a class="btn btn-primary" href="assets/alex-cobian-cv-salesforce.pdf" download>
+                <span data-i18n="cvPdf">Descargar PDF</span>
+              </a>
+              <a class="btn btn-primary" href="assets/alex-cobian-cv-salesforce.docx" download>
+                <span data-i18n="cvWord">Descargar Word</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="container footer">
+      <p data-i18n="footerText">© 2026 Alex Cobián Benito | Portfolio profesional</p>
+    </footer>
+    <button class="scroll-top" type="button" aria-label="Volver arriba" title="Volver arriba" data-i18n-aria-label="scrollTopLabel" data-i18n-title="scrollTopLabel">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 6l-7 7h4v5h6v-5h4z"></path>
+      </svg>
+    </button>
+  </body>
 </html>

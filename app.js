@@ -1,148 +1,130 @@
 (function () {
-  const translations = {
-    es: {
-      pageTitle: "Alex Cobián Benito | Desarrollador software de aplicaciones web",
-      pageDescription: "Portfolio de Alex Cobián Benito, desarrollador software de aplicaciones web: React, Python, APIs, MVC y pruebas unitarias. Aprendizaje en Salesforce y Apex.",
-      ogTitle: "Alex Cobián Benito | Desarrollador software de aplicaciones web",
-      ogDescription: "Portfolio de Alex Cobián Benito, desarrollador software de aplicaciones web: React, Python, APIs, MVC y pruebas unitarias. Aprendizaje en Salesforce y Apex.",
-      navCompetencies: "Competencias",
-      navStack: "Stack",
-      navPresence: "Presencia",
-      navProjects: "Proyectos",
-      languageLabel: "Idioma:",
-      languageSelectAria: "Seleccionar idioma",
-      languageOptionEs: "Espanol",
-      languageOptionEn: "Ingles",
-      eyebrow: "Portfolio profesional",
-      heroTitle: "Desarrollador software de aplicaciones web",
-      heroBody: "Soy desarrollador software de aplicaciones web y actualmente trabajo en Shackleton Innovation, en Bilbao, donde mantengo y desarrollo funcionalidades de frontend y backend. En el frontend trabajo principalmente con React y el patrón MVC, con una estructura que separa responsabilidades y facilita el mantenimiento del código, apoyada en pruebas unitarias. En el backend utilizo Python para desarrollar las APIs que conectan la interfaz con las funcionalidades de la aplicación. Además, sigo profundizando en Salesforce y Apex a través de Trailhead.",
-      ctaGithub: "Ver GitHub",
-      ctaLinkedin: "Ver LinkedIn",
-      ctaTrailhead: "Ver Salesforce Trailhead",
-      ctaCv: "Descargar CV",
-      photoFallback: "Coloca tu foto en assets/alex-cobian-benito-profile-20260904.jpg",
-      competenciesTitle: "Competencias tecnicas",
-      competencyFrontendTitle: "Desarrollo Frontend",
-      competencyFrontendBody: "Construccion de interfaces web con HTML5, CSS, JavaScript, TypeScript y React, incluyendo manipulacion del DOM, formularios, eventos, interacciones y peticiones asincronas.",
-      competencyBackendTitle: "Backend y APIs",
-      competencyBackendBody: "Programación de lógica de servidor con Python, PHP y Node.js, desarrollo de APIs, análisis de incidencias, validación de datos y manejo de errores.",
-      competencyDataTitle: "Bases de datos",
-      competencyDataBody: "Modelado, consultas y gestion de datos con MySQL, SQL Server y Access, prestando atencion a filtros, valores nulos, estados y datos reales.",
-      competencyDeployTitle: "Entornos y despliegue",
-      competencyDeployBody: "Configuracion de entornos con XAMPP, Apache, Nginx y Docker, control de versiones con Git y GitHub, y trabajo diario con Visual Studio Code.",
-      competencyMobileTitle: "Software y multiplataforma",
-      competencyMobileBody: "Base en Java, Kotlin, Jetpack Compose y Visual Basic .NET para ampliar el criterio tecnico mas alla del desarrollo web y entender distintos entornos de aplicacion.",
-      competencyQualityTitle: "Buenas practicas e IA aplicada",
-      competencyQualityBody: "Organización de código, separación de responsabilidades con MVC, pruebas unitarias, specs driven development, prompt engineering y manejo de agentes de IA como apoyo para revisar y optimizar soluciones.",
-      stackTitle: "Stack y herramientas",
-      presenceTitle: "Presencia profesional",
-      presenceBody: "Canales donde presento mi perfil, mi codigo y mi aprendizaje en Salesforce.",
-      projectsTitle: "Proyectos",
-      projectLiveTag: "Web publicada",
-      projectPkxpertiseBody: "Plataforma de servicios Pokémon con configuración guiada de unidades y equipos, seguimiento de pedidos y soporte al usuario. Un proyecto que reúne interfaz web y lógica de servidor en una experiencia publicada con dominio propio.",
-      projectPkxpertiseStack: "Tecnologías de PKXpertise",
-      projectPkxpertiseVisit: "Visitar la web de PKXpertise",
-      projectPkxpertiseCode: "Ver código de PKXpertise en GitHub",
-      projectUnpublishedTag: "Web no publicada",
-      projectClientIntuitiveTitle: "Cliente 1 · Web intuitiva",
-      projectClientIntuitiveBody: "Primera propuesta web para un cliente del sector de baterías industriales, con un recorrido guiado por aplicación, fase e interés, exploración de productos y formulario de consulta técnica.",
-      projectClientIntuitiveStack: "Tecnologías de la web intuitiva",
-      projectClientIntuitiveCode: "Ver código de la web intuitiva de Cliente 1 en GitHub",
-      projectClientDevelopedTitle: "Cliente 1 · Web base desarrollada",
-      projectClientDevelopedBody: "Segunda versión para el mismo cliente, con navegación orbital, catálogo técnico y secciones de aplicaciones, empresa, proceso y documentación, conectadas con un formulario de contacto técnico-comercial.",
-      projectClientDevelopedStack: "Tecnologías de la web base desarrollada",
-      projectClientDevelopedCode: "Ver código de la web base desarrollada de Cliente 1 en GitHub",
-      projectClientReimaginedTitle: "Cliente 1 · Web reimaginada",
-      projectClientReimaginedBody: "Reinterpretación multipágina de la web del cliente, con navegación orbital y páginas dedicadas a sistemas, aplicaciones, método, documentación y contacto.",
-      projectClientReimaginedStack: "Tecnologías de la web reimaginada",
-      projectClientReimaginedCode: "Ver código de la web reimaginada de Cliente 1 en GitHub",
-      projectVisit: "Visitar web",
-      projectCode: "Ver código",
-      tagCode: "Codigo",
-      tagProfile: "Perfil",
-      tagLearning: "Aprendizaje",
-      tagCv: "CV",
-      projectGithubBody: "Repositorios y evolucion de mis proyectos tecnicos.",
-      projectLinkedinBody: "Resumen profesional y red de contactos.",
-      projectTrailheadBody: "Perfil activo en Salesforce Trailhead, centrado en aprendizaje practico del ecosistema y APEX.",
-      projectCvTitle: "Curriculum profesional",
-      projectCvBody: "CV actualizado en PDF con mi perfil, formacion y competencias tecnicas principales.",
-      projectCvLink: "Descargar PDF",
-      footerText: "(c) 2026 Alex Cobián Benito | Portfolio profesional",
-      scrollTopLabel: "Volver arriba"
-    },
-    en: {
-      pageTitle: "Alex Cobián Benito | Web Application Software Developer",
-      pageDescription: "Portfolio of Alex Cobián Benito, a software developer for web applications: React, Python, APIs, MVC, and unit testing. Learning Salesforce and Apex.",
-      ogTitle: "Alex Cobián Benito | Web Application Software Developer",
-      ogDescription: "Portfolio of Alex Cobián Benito, a software developer for web applications: React, Python, APIs, MVC, and unit testing. Learning Salesforce and Apex.",
-      navCompetencies: "Skills",
-      navStack: "Stack",
-      navPresence: "Presence",
-      navProjects: "Projects",
-      languageLabel: "Language:",
-      languageSelectAria: "Select language",
-      languageOptionEs: "Spanish",
-      languageOptionEn: "English",
-      eyebrow: "Professional portfolio",
-      heroTitle: "Web Application Software Developer",
-      heroBody: "I am a software developer for web applications, currently working at Shackleton Innovation in Bilbao, where I maintain and develop frontend and backend features. On the frontend, I mainly use React and the MVC pattern, with a structure that separates responsibilities and makes the code easier to maintain, supported by unit tests. On the backend, I use Python to develop the APIs that connect the interface to the application's functionality. I am also continuing to deepen my knowledge of Salesforce and Apex through Trailhead.",
-      ctaGithub: "View GitHub",
-      ctaLinkedin: "View LinkedIn",
-      ctaTrailhead: "View Salesforce Trailhead",
-      ctaCv: "Download CV",
-      photoFallback: "Place your photo in assets/alex-cobian-benito-profile-20260904.jpg",
-      competenciesTitle: "Technical skills",
-      competencyFrontendTitle: "Frontend Development",
-      competencyFrontendBody: "Building web interfaces with HTML5, CSS, JavaScript, TypeScript, and React, including DOM manipulation, forms, events, interactions, and asynchronous requests.",
-      competencyBackendTitle: "Backend and APIs",
-      competencyBackendBody: "Server-side programming with Python, PHP, and Node.js, API development, issue analysis, data validation, and error handling.",
-      competencyDataTitle: "Databases",
-      competencyDataBody: "Data modeling, querying, and management with MySQL, SQL Server, and Access, paying attention to filters, null values, states, and real-world data.",
-      competencyDeployTitle: "Environments and deployment",
-      competencyDeployBody: "Environment setup with XAMPP, Apache, Nginx, and Docker, version control with Git and GitHub, and daily work with Visual Studio Code.",
-      competencyMobileTitle: "Software and multiplatform",
-      competencyMobileBody: "Foundation in Java, Kotlin, Jetpack Compose, and Visual Basic .NET to broaden technical judgment beyond web development and understand different application environments.",
-      competencyQualityTitle: "Best practices and applied AI",
-      competencyQualityBody: "Code organization, separation of responsibilities with MVC, unit testing, specs driven development, prompt engineering, and AI agent handling as support for reviewing and optimizing solutions.",
-      stackTitle: "Stack and tools",
-      presenceTitle: "Professional presence",
-      presenceBody: "Places where I present my profile, code, and Salesforce learning.",
-      projectsTitle: "Projects",
-      projectLiveTag: "Live website",
-      projectPkxpertiseBody: "Pokémon services platform with guided unit and team configuration, order tracking, and user support. A project that brings together a web interface and server-side logic in a live experience on its own domain.",
-      projectPkxpertiseStack: "PKXpertise technologies",
-      projectPkxpertiseVisit: "Visit the PKXpertise website",
-      projectPkxpertiseCode: "View PKXpertise code on GitHub",
-      projectUnpublishedTag: "Unpublished website",
-      projectClientIntuitiveTitle: "Client 1 · Intuitive website",
-      projectClientIntuitiveBody: "First website proposal for a client in the industrial battery sector, with a guided journey based on application, project stage, and interests, product exploration, and a technical enquiry form.",
-      projectClientIntuitiveStack: "Intuitive website technologies",
-      projectClientIntuitiveCode: "View code for Client 1's intuitive website on GitHub",
-      projectClientDevelopedTitle: "Client 1 · Expanded website",
-      projectClientDevelopedBody: "Second version for the same client, with orbital navigation, a technical catalogue, and sections covering applications, the company, processes, and documentation, connected to a technical and sales enquiry form.",
-      projectClientDevelopedStack: "Expanded website technologies",
-      projectClientDevelopedCode: "View code for Client 1's expanded website on GitHub",
-      projectClientReimaginedTitle: "Client 1 · Reimagined website",
-      projectClientReimaginedBody: "A multipage reinterpretation of the client's website, with orbital navigation and dedicated pages for systems, applications, methodology, documentation, and contact.",
-      projectClientReimaginedStack: "Reimagined website technologies",
-      projectClientReimaginedCode: "View code for Client 1's reimagined website on GitHub",
-      projectVisit: "Visit website",
-      projectCode: "View code",
-      tagCode: "Code",
-      tagProfile: "Profile",
-      tagLearning: "Learning",
-      tagCv: "CV",
-      projectGithubBody: "Repositories and the evolution of my technical projects.",
-      projectLinkedinBody: "Professional summary and network.",
-      projectTrailheadBody: "Active Salesforce Trailhead profile focused on practical learning across the ecosystem and APEX.",
-      projectCvTitle: "Professional CV",
-      projectCvBody: "Updated PDF CV with my profile, education, and main technical skills.",
-      projectCvLink: "Download PDF",
-      footerText: "(c) 2026 Alex Cobián Benito | Professional portfolio",
-      scrollTopLabel: "Back to top"
-    }
+  // Spanish content lives in the HTML so it remains available without JavaScript.
+  const spanish = {
+    pageTitle: document.title,
+    pageDescription: document.querySelector('meta[name="description"]').content
   };
+  document.querySelectorAll("[data-i18n]").forEach(function (node) {
+    spanish[node.dataset.i18n] = node.textContent.trim();
+  });
+  ["aria-label", "title", "alt"].forEach(function (attribute) {
+    document.querySelectorAll("[data-i18n-" + attribute + "]").forEach(function (node) {
+      spanish[node.getAttribute("data-i18n-" + attribute)] = node.getAttribute(attribute);
+    });
+  });
+  const translations = { es: spanish, en: {
+    "pageTitle": "Alex Cobián Benito | Salesforce Developer · Fullstack / Backend",
+    "pageDescription": "Salesforce developer with after-sales, warranty and pricing integration projects. Fullstack / Backend development, APIs and data validation.",
+    "skipLink": "Skip to content",
+    "navAria": "Main navigation",
+    "navProjects": "Projects",
+    "navCompetencies": "Skills",
+    "navStack": "Technologies",
+    "navPresence": "Contact & CV",
+    "languageLabel": "Language:",
+    "languageSelectAria": "Select language",
+    "languageOptionEs": "Spanish",
+    "languageOptionEn": "English",
+    "eyebrow": "Professional portfolio",
+    "heroTitle": "Salesforce Developer",
+    "heroBody": "I develop Salesforce applications to automate processes, integrate services and keep data consistent. I complement this focus with Fullstack / Backend development: React interfaces, APIs and SQL persistence. Explore my projects, technical decisions and available evidence below.",
+    "ctaProjects": "Explore projects",
+    "ctaContact": "Contact & CV",
+    "photoFallback": "Alex Cobián Benito",
+    "photoAlt": "Portrait of Alex Cobián Benito",
+    "projectsTitle": "Projects and solutions",
+    "projectsBody": "Personal projects with source code and technical evidence. Development environments and unpublished proposals are identified for each project.",
+    "salesforceProjects": "Salesforce",
+    "posventaStatus": "Code · Validated in Salesforce development org",
+    "posventaTitle": "After-sales and warranties",
+    "posventaBody": "Manage product issues and follow each case through to resolution. The application organizes assignment and records a simulated warranty assessment.",
+    "posventaFeatures": "Queues and role-based permissions, data validation, an LWC case view and an open-case report.",
+    "technicalDetails": "Details and scope",
+    "posventaDetail": "Related Account, Contact, Asset and Case records; Flow coordinates intake and evaluation while Apex enforces authorization and closure rules. Documentation records 106 Apex and 23 Jest tests. Incremental deployment verified; clean installation not executed. Fictional data, no public demo.",
+    "tarifasStatus": "Code · Validated in Salesforce development org",
+    "tarifasTitle": "Supplier pricing lookup",
+    "tarifasBody": "Look up external prices from Salesforce and keep the result for later reference. A simulated supplier returns prices that are validated before saving a private snapshot.",
+    "tarifasFeatures": "Lookup and history LWC, authenticated HTTP integration and immutable snapshots readable while the supplier is offline.",
+    "tarifasDetail": "V1 completed with documented limitations. No application-scheduled retries; external transport recorded duplicate receipts for 429/503 responses, so single delivery and idempotency across actions are not guaranteed. Incremental deployment verified; clean installation only documented. No public demo.",
+    "backendProjects": "Fullstack / Backend",
+    "importacionStatus": "Code · Local execution",
+    "importacionTitle": "Data import and validation",
+    "importacionBody": "Import CSV catalogues without accepting incomplete or duplicate data. The API validates records and commits each complete import to PostgreSQL.",
+    "importacionFeatures": "Row-level errors, transactions, recovery of identical imports and paginated history.",
+    "importacionDetail": "Identity is based on file bytes: resending an identical committed CSV retrieves its result. Other files with existing SKUs are rejected. No frontend, authentication or public deployment; load testing is not evidenced.",
+    "solicitudesStatus": "Code · Local execution",
+    "solicitudesTitle": "Requests and approvals",
+    "solicitudesBody": "Organize internal requests for equipment, software and training. A React interface supports drafts, submission and reviewing decisions by the assigned reviewer.",
+    "solicitudesFeatures": "States and roles, server-side authorization, decision history and paginated filters.",
+    "solicitudesDetail": "Fictional users and PostgreSQL-backed sessions. Approval, rejection and cancellation are terminal states; history is restricted to the author and assigned reviewer. Acceptance documents API, frontend, integration and E2E tests. No public deployment.",
+    "eventosStatus": "Code · Local execution",
+    "eventosTitle": "Reliable order event delivery",
+    "eventosBody": "Receive and persist HTTP order events for processing and delivery tracking. A persistent queue coordinates a worker and a demonstration receiver.",
+    "eventosFeatures": "Authentication, bounded retries, attempt history and transactional deduplication in the receiver.",
+    "eventosDetail": "Deliveries may repeat. The receiver deduplicates its fictional preparation within its own transaction; this does not guarantee exactly-once delivery to external services. No frontend, public deployment, load testing or high-availability testing.",
+    "earlierProjects": "Earlier work",
+    "projectLiveTag": "Live website",
+    "projectClientReimaginedCode": "Code for this proposal",
+    "projectVisit": "Visit website",
+    "projectPkxpertiseVisit": "Visit the PKXpertise website",
+    "projectPkxpertiseCode": "View PKXpertise code on GitHub",
+    "projectClientDevelopedCode": "Code for this proposal",
+    "projectClientDevelopedTitle": "Expanded website",
+    "projectPkxpertiseStack": "PKXpertise technologies",
+    "projectClientReimaginedBody": "A multipage reinterpretation of the client's website, with orbital navigation and dedicated pages for systems, applications, methodology, documentation, and contact.",
+    "projectClientDevelopedBody": "Second version for the same client, with orbital navigation, a technical catalogue, and sections covering applications, the company, processes, and documentation, connected to a technical and sales enquiry form.",
+    "projectPkxpertiseBody": "Pokémon services platform with guided unit and team configuration, order tracking, and user support. A project that brings together a web interface and server-side logic in a live experience on its own domain.",
+    "projectCode": "View code",
+    "projectClientReimaginedTitle": "Reimagined website",
+    "projectClientIntuitiveBody": "First website proposal for a client in the industrial battery sector, with a guided journey based on application, project stage, and interests, product exploration, and a technical enquiry form.",
+    "projectClientIntuitiveCode": "Code for this proposal",
+    "projectClientIntuitiveTitle": "Intuitive website",
+    "clientStatus": "Three proposals · Unpublished",
+    "clientTitle": "Industrial battery website",
+    "clientBody": "Three versions for the same client, with different approaches to navigation and catalogue presentation.",
+    "competenciesTitle": "Applied skills",
+    "skillSalesforce": "Salesforce · Data and automation",
+    "skillSalesforceBody": "Apex, SOQL, Flow, objects and relationships, validation, permissions and record access. Applied to case lifecycles and warranty assessment.",
+    "skillSalesforceLink": "See after-sales and warranties",
+    "skillIntegration": "Salesforce · UI and integration",
+    "skillIntegrationBody": "Lightning Web Components, HTTP and REST APIs with Named/External Credentials. Response validation, authorization and private history.",
+    "skillIntegrationLink": "See supplier pricing lookup",
+    "skillFrontend": "Fullstack · Interfaces and workflows",
+    "skillFrontendBody": "JavaScript, TypeScript and React for forms, states, error handling and navigation. Node.js backends with Express and Fastify.",
+    "skillFrontendLink": "See requests and approvals",
+    "skillData": "Backend · Data integrity",
+    "skillDataBody": "SQL and PostgreSQL, transactions and constraints. Atomic imports, scoped idempotency and effect deduplication in a controlled receiver.",
+    "skillDataLink": "See data import",
+    "skillQuality": "Testing and maintenance",
+    "skillQualityBody": "Apex and Jest tests for Salesforce; API tests, PostgreSQL integration and E2E flows in web projects. Git and GitHub for version control and source review.",
+    "skillQualityLink": "See event delivery",
+    "skillBackground": "Web background and further learning",
+    "skillBackgroundBody": "Previous work with Python and APIs, PHP, HTML and CSS. Further study in Java, Kotlin, Jetpack Compose and .NET; ongoing Salesforce learning through Trailhead.",
+    "skillBackgroundLink": "See professional profiles",
+    "stackTitle": "Technologies by purpose",
+    "sfStack": "Salesforce",
+    "webStack": "Fullstack / Backend",
+    "testStack": "Testing and tools",
+    "presenceTitle": "Contact, code and CV",
+    "presenceBody": "You can contact me through LinkedIn and explore my code and learning through these profiles.",
+    "contactLinkedin": "Professional profile and contact.",
+    "contactLinkedinLink": "Contact on LinkedIn",
+    "contactGithub": "Repositories, source code and technical documentation.",
+    "contactGithubLink": "Explore GitHub",
+    "contactTrailblazer": "Further learning in the Salesforce ecosystem.",
+    "contactTrailblazerLink": "View Trailblazer",
+    "cvTitle": "CV",
+    "cvPdf": "Download PDF",
+    "cvWord": "Download Word",
+    "footerText": "© 2026 Alex Cobián Benito | Professional portfolio",
+    "scrollTopLabel": "Back to top",
+    "cvBody": "Profile, projects and education. Both documents are in Spanish.",
+    "projectEvidence": "Documented evidence",
+    "grStatus": "Academic project · Source code available",
+    "grBody": "A web application for buying and selling furniture and 3D spare parts, focused on reuse and repair.",
+    "grFeatures": "Catalogue, listings, favourites, shopping cart and messages between users.",
+    "grAvailability": "No verified public demo."
+} };
 
   function setupProfilePhoto() {
     const photoFigure = document.querySelector(".profile-photo");
@@ -153,10 +135,12 @@
       photoFigure.classList.remove("missing");
     });
 
-    photo.addEventListener("error", function () {
-      photo.remove();
+    function showFallback() {
+      photo.hidden = true;
       photoFigure.classList.add("missing");
-    });
+    }
+    photo.addEventListener("error", showFallback);
+    if (photo.complete && !photo.naturalWidth) showFallback();
   }
 
   function setupScrollTop() {
@@ -177,7 +161,9 @@
     toggleVisibility();
 
     button.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+      const main = document.querySelector("main");
+      if (main) main.focus({ preventScroll: true });
     });
   }
 
@@ -209,10 +195,10 @@
     const ogLocale = document.querySelector('meta[property="og:locale"]');
 
     if (description) description.setAttribute("content", dict.pageDescription);
-    if (ogTitle) ogTitle.setAttribute("content", dict.ogTitle);
-    if (ogDescription) ogDescription.setAttribute("content", dict.ogDescription);
-    if (twitterTitle) twitterTitle.setAttribute("content", dict.ogTitle);
-    if (twitterDescription) twitterDescription.setAttribute("content", dict.ogDescription);
+    if (ogTitle) ogTitle.setAttribute("content", dict.pageTitle);
+    if (ogDescription) ogDescription.setAttribute("content", dict.pageDescription);
+    if (twitterTitle) twitterTitle.setAttribute("content", dict.pageTitle);
+    if (twitterDescription) twitterDescription.setAttribute("content", dict.pageDescription);
     if (ogLocale) ogLocale.setAttribute("content", language === "es" ? "es_ES" : "en_US");
   }
 
@@ -261,6 +247,10 @@
       if (Object.prototype.hasOwnProperty.call(dict, key)) {
         node.setAttribute("title", dict[key]);
       }
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (node) {
+      node.alt = dict[node.dataset.i18nAlt] || "";
     });
 
     document.documentElement.lang = activeLanguage;
@@ -360,6 +350,10 @@
       });
     });
 
+    switcher.addEventListener("focusout", function (event) {
+      if (!switcher.contains(event.relatedTarget)) setOpen(false);
+    });
+
     document.addEventListener("click", function (event) {
       if (!switcher.contains(event.target)) {
         setOpen(false);
@@ -383,7 +377,8 @@
         return;
       }
 
-      const offset = Math.ceil(header.getBoundingClientRect().height + 24);
+      const offset = getComputedStyle(header).position === "sticky"
+        ? Math.ceil(header.getBoundingClientRect().height + 24) : 24;
       root.style.setProperty("--anchor-offset", offset + "px");
     }
 

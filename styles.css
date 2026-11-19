@@ -5,7 +5,7 @@
   --text: #fff8ef;
   --muted: #f5e7d2;
   --line: rgba(86, 60, 38, 0.36);
-  --glass: rgba(98, 69, 45, 0.68);
+  --glass: rgba(75, 49, 30, 0.96);
   --glass-soft: rgba(112, 80, 53, 0.64);
   --primary: #f0b46c;
   --secondary: #8bb48b;
@@ -60,7 +60,7 @@ body {
 .glass-soft {
   border: 1px solid rgba(122, 92, 62, 0.28);
   border-radius: 18px;
-  background: rgba(205, 177, 136, 0.22);
+  background: rgba(205, 177, 136, 0.08);
 }
 
 .topbar {
@@ -147,7 +147,7 @@ body {
 
 .nav a,
 .top-links a {
-  color: #fff8ef;
+  color: #2f1f12;
   text-decoration: none;
   font-size: 0.92rem;
   border: 1px solid rgba(143, 108, 70, 0.45);
@@ -179,7 +179,7 @@ body {
   padding: 10px 12px 12px;
   border-color: rgba(143, 108, 70, 0.45);
   background:
-    linear-gradient(135deg, rgba(180, 143, 98, 0.88), rgba(138, 98, 63, 0.9)),
+    linear-gradient(135deg, #725033, #593b24),
     linear-gradient(130deg, rgba(240, 180, 108, 0.16), rgba(139, 180, 139, 0.13));
   box-shadow:
     inset 0 1px 0 rgba(255, 248, 239, 0.18),
@@ -464,7 +464,7 @@ h3 {
   padding: 16px;
   border: 1px solid rgba(112, 82, 55, 0.22);
   border-radius: 14px;
-  background: rgba(205, 177, 136, 0.32);
+  background: rgba(205, 177, 136, 0.08);
 }
 
 .competency-grid h3 {
@@ -489,7 +489,7 @@ h3 {
   padding: 8px 11px;
   border-radius: 999px;
   background: rgba(205, 177, 136, 0.92);
-  color: #fff8ef;
+  color: #2f1f12;
   font-size: 0.9rem;
 }
 
@@ -521,9 +521,9 @@ h3 {
   padding: 4px 9px;
   border: 1px solid rgba(143, 108, 70, 0.4);
   border-radius: 999px;
-  color: #fff8ef;
+  color: #2f1f12;
   background: rgba(205, 177, 136, 0.9);
-  font-size: 11px;
+  font-size: 0.875rem;
   margin-bottom: 10px;
 }
 
@@ -598,7 +598,7 @@ h3 {
 
 .project-meta .tag {
   margin-bottom: 0;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .project-meta .tag-live,
@@ -659,7 +659,7 @@ h3 {
 
 .footer p {
   margin: 0;
-  color: var(--muted);
+  color: #4b311e;
   font-size: 0.9rem;
 }
 
@@ -876,4 +876,90 @@ select:focus-visible {
   .hero h1 {
     font-size: 2.08rem;
   }
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 100;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #fff8ef;
+  color: #2f1f12;
+}
+
+.skip-link:focus { top: 8px; }
+
+.hero h1 { margin-bottom: 12px; }
+.hero-specialty {
+  margin: 0 0 24px;
+  color: var(--primary);
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 600;
+}
+.eyebrow { margin-bottom: 22px; font-size: 0.875rem; }
+.cta-row { padding-top: 28px; transform: none; }
+.profile-photo img[hidden] { display: none; }
+
+.panel .project-group-title {
+  margin: 30px 0 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 248, 239, 0.2);
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+.salesforce-projects .project-card { border-top: 3px solid var(--secondary); }
+.project-card h4 {
+  margin: 0 0 12px;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.25rem, 1.8vw, 1.6rem);
+  line-height: 1.3;
+}
+.project-card .tag { line-height: 1.5; margin-bottom: 14px; }
+.project-features { font-size: 0.95rem; }
+.project-card details { width: 100%; margin: 0 0 20px; }
+summary {
+  min-height: 44px;
+  padding: 10px 0;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.5;
+}
+summary:focus-visible { outline: 2px solid #fff8ef; outline-offset: 3px; }
+.project-card details p { margin-top: 8px; font-size: 0.95rem; }
+.project-actions { align-items: center; padding-top: 4px; }
+.card a.evidence-link,
+.client-case details a,
+.competency-grid a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  line-height: 1.5;
+  padding-block: 10px;
+}
+.competency-grid a { display: inline-block; margin-top: 6px; }
+.client-case details { margin-bottom: 8px; }
+#stack h3 { font-size: 1rem; margin: 20px 0 12px; }
+.cv-downloads { display: flex; flex-wrap: wrap; gap: 12px; }
+.card .cv-downloads .btn-primary { color: #2f1f12; }
+.panel .section-copy { margin-bottom: 20px; }
+.nav a, .top-links a, .lang-trigger, .lang-option { min-height: 44px; }
+.top-actions .lang-trigger { min-height: 28px; }
+
+@media (max-width: 760px) {
+  .topbar { position: relative; top: 0; }
+  .topbar-inner { gap: 12px; }
+  .top-links { display: none; }
+  .top-actions { justify-self: center; }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nav a { padding-inline: 12px; }
+  .hero { gap: 24px; }
+  .hero h1 { margin-bottom: 12px; }
+  .profile-card { max-width: 300px; }
+  .cta-row { padding-top: 0; }
+  .project-card h4 { font-size: 1.35rem; }
+  .brand { white-space: normal; text-align: center; line-height: 1.3; }
 }
