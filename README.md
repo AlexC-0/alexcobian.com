@@ -16,6 +16,15 @@ No hay compilación, framework ni dependencias de ejecución instalables. Las
 fuentes Sora y Manrope se solicitan a Google Fonts; hay una alternativa sans-serif.
 La política CSP mantiene scripts del mismo origen y las fuentes externas existentes.
 
+La presentación conserva el orden: introducción, competencias, stack, presencia
+profesional y proyectos. Las superficies usan arena y crema claras, texto marrón
+legible y acentos suaves. Los accesos a perfiles y a ambos CV están disponibles
+tanto en la presentación como en presencia profesional.
+
+Las competencias Salesforce se complementan con frontend, backend, bases de datos,
+entornos, desarrollo multiplataforma y pruebas. Las nuevas capacidades deben
+integrarse con las descripciones pertinentes existentes, conservando su detalle.
+
 El español del HTML es la fuente inicial de las traducciones. Así se evita duplicar
 su contenido en JavaScript y se conserva el contenido y las descargas sin scripts.
 Para modificar un texto, actualizar el HTML y su clave inglesa en `translations.en`.
@@ -47,7 +56,8 @@ Fuentes consultadas el 19 de noviembre de 2026, junto con los README correspondi
 | GR-Inn | [Aplicación académica](https://github.com/AlexC-0/ProyectoTFGAno2GradoSuperiorDAW/blob/main/eco_woods/index.php) y estructura del repositorio |
 
 Se conservan PKXpertise y las tres propuestas del mismo cliente de baterías
-industriales. Las propuestas se agrupan sin atribuirles publicación. GR-Inn
+industriales. Cada propuesta tiene su tarjeta, descripción y enlace visibles,
+sin atribuirle publicación. GR-Inn
 mantiene el enlace de repositorio identificado en el CV y contrastado con el código.
 No se ofrece acceso privado a organizaciones Salesforce ni demos simuladas.
 
@@ -82,7 +92,10 @@ Comprobaciones realizadas el 19 de noviembre de 2026:
 - Sintaxis JavaScript y diff sin errores.
 - Chromium: español e inglés a 320, 390, 768, 1024 y 1440 px, sin desbordamiento horizontal.
 - Inspección visual de escritorio y móvil, con foco y jerarquía de encabezados revisados.
-- 109 claves de contenido y atributos con traducción inglesa disponible.
+- 120 claves de contenido y atributos con traducción inglesa disponible.
+- Diez tarjetas de proyectos: cinco Salesforce/Fullstack/Backend, PKXpertise,
+  tres propuestas para el mismo cliente y GR-Inn. Las descripciones anteriores
+  de PKXpertise y las tres propuestas se conservan completas en ambos idiomas.
 - Selector por teclado, Escape, cierre al perder foco y persistencia tras recargar.
 - Enlace de salto, anclas sin ocultar títulos, detalles desplegables y vuelta al inicio.
 - Contenido y descargas disponibles sin JavaScript.
@@ -105,8 +118,10 @@ sobre `main`, con dominio personalizado definido por `CNAME`. El repositorio no
 contiene un workflow de publicación propio. Tras una actualización remota, comprobar
 la nueva ejecución de Pages y su commit antes de verificar el dominio.
 
-La implementación y las descargas están comprobadas localmente. La publicación de
-esta revisión y su verificación pública quedan pendientes. En el dominio deben
+La versión `b8398f5` se publicó y verificó en el dominio con ambos idiomas y los
+dos CV íntegros. La revisión posterior de paleta, disposición y contenido está
+comprobada localmente; su publicación y verificación pública quedan pendientes.
+En el dominio deben
 comprobarse ambos idiomas, recursos, enlaces y los hashes de los dos documentos
 recibidos; un HTTP 200 por sí solo no verifica el CV.
 
