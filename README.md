@@ -17,9 +17,17 @@ fuentes Sora y Manrope se solicitan a Google Fonts; hay una alternativa sans-ser
 La política CSP mantiene scripts del mismo origen y las fuentes externas existentes.
 
 La presentación conserva el orden: introducción, competencias, stack, presencia
-profesional y proyectos. Las superficies usan arena y crema claras, texto marrón
-legible y acentos suaves. Los accesos a perfiles y a ambos CV están disponibles
-tanto en la presentación como en presencia profesional.
+profesional y proyectos. La paleta procede de `053c266`: fondo `#cdb188` / `#e2cda8`,
+texto `#fff8ef` / `#f5e7d2`, paneles `rgba(98, 69, 45, 0.68)` y acentos
+`#f0b46c` / `#8bb48b`. Se conservan también sus degradados, bordes y sombras.
+Los componentes nuevos reutilizan estos colores. Los accesos a perfiles y a ambos
+CV están disponibles tanto en la presentación como en presencia profesional.
+
+El documento y la raíz CSS declaran `color-scheme: only light`, conforme a la
+[indicación de Chrome para evitar la transformación automática de colores](https://developer.chrome.com/blog/auto-dark-theme#how_to_opt-out_of_auto_dark_theme).
+No hay un tema oscuro alternativo. Los ajustes forzados y extensiones del navegador
+pueden alterar el aspecto; la emulación forzada mediante CDP sigue transformando
+los colores en el navegador de prueba incluso con esa declaración.
 
 Las competencias Salesforce se complementan con frontend, backend, bases de datos,
 entornos, desarrollo multiplataforma y pruebas. Las nuevas capacidades deben
@@ -92,6 +100,8 @@ Comprobaciones realizadas el 19 de noviembre de 2026:
 - Sintaxis JavaScript y diff sin errores.
 - Chromium: español e inglés a 320, 390, 768, 1024 y 1440 px, sin desbordamiento horizontal.
 - Inspección visual de escritorio y móvil, con foco y jerarquía de encabezados revisados.
+- Colores, fondos, bordes y sombras de los selectores originales contrastados con
+  `053c266`: 84 declaraciones coincidentes. Las nuevas reglas usan la misma paleta.
 - 120 claves de contenido y atributos con traducción inglesa disponible.
 - Diez tarjetas de proyectos: cinco Salesforce/Fullstack/Backend, PKXpertise,
   tres propuestas para el mismo cliente y GR-Inn. Las descripciones anteriores
@@ -118,9 +128,9 @@ sobre `main`, con dominio personalizado definido por `CNAME`. El repositorio no
 contiene un workflow de publicación propio. Tras una actualización remota, comprobar
 la nueva ejecución de Pages y su commit antes de verificar el dominio.
 
-La versión `b8398f5` se publicó y verificó en el dominio con ambos idiomas y los
-dos CV íntegros. La revisión posterior de paleta, disposición y contenido está
-comprobada localmente; su publicación y verificación pública quedan pendientes.
+La versión `1f4bf66` se publicó y verificó en el dominio con ambos idiomas y los
+dos CV íntegros. La restauración posterior de la paleta original está comprobada
+localmente; su publicación y verificación pública quedan pendientes.
 En el dominio deben
 comprobarse ambos idiomas, recursos, enlaces y los hashes de los dos documentos
 recibidos; un HTTP 200 por sí solo no verifica el CV.
